@@ -1,0 +1,177 @@
+﻿@model IEnumerable<FormularioCuestionario.Models.Cuestionarios>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Apellido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DNI)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EMail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Teléfono)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AsesoramientoInscripcion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SalónEquipamiento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Contenidos)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IstructorConocimiento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InstructorClaridad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InstructorTrato)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ConocimientoAdquirido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Utilidad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SatisfacciónGral)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HariaOtro)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cual)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Metodologia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Material)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Duración)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Predisposicion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ejercicios)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TratoAdministrativo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sugerencias)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Capacitaciones.Descripción)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ciudades.NombreCiudad)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Apellido)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DNI)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EMail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Teléfono)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AsesoramientoInscripcion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SalónEquipamiento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Contenidos)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IstructorConocimiento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InstructorClaridad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InstructorTrato)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ConocimientoAdquirido)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Utilidad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SatisfacciónGral)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HariaOtro)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cual)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Metodologia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Material)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Duración)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Predisposicion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ejercicios)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TratoAdministrativo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sugerencias)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Capacitaciones.Descripción)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ciudades.NombreCiudad)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IdCuestionario }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IdCuestionario }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IdCuestionario })
+        </td>
+    </tr>
+}
+
+</table>

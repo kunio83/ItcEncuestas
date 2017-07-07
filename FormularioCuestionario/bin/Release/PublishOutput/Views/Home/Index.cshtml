@@ -1,0 +1,13 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Ingrese su N° de Documento:</h1>
+    @using (Html.BeginForm("CuestionarioActual", "Cuestionarios", FormMethod.Get))
+    {
+        @Html.TextBox("dni",null,new { onkeydown = "tecla(event);" })
+
+        <input type="submit" value="Continuar" />
+    }
+</div>

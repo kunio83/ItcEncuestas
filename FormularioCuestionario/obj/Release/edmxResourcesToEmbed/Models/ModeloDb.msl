@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CuestionariosModelStoreContainer" CdmEntityContainer="CuestionariosEntities">
+    <EntitySetMapping Name="Capacitaciones">
+      <EntityTypeMapping TypeName="IsTypeOf(CuestionariosModel.Capacitaciones)">
+        <MappingFragment StoreEntitySet="Capacitaciones">
+          <ScalarProperty Name="IdCapacitación" ColumnName="IdCapacitación" />
+          <ScalarProperty Name="Descripción" ColumnName="Descripción" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ciudades">
+      <EntityTypeMapping TypeName="IsTypeOf(CuestionariosModel.Ciudades)">
+        <MappingFragment StoreEntitySet="Ciudades">
+          <ScalarProperty Name="IdCiudad" ColumnName="IdCiudad" />
+          <ScalarProperty Name="NombreCiudad" ColumnName="NombreCiudad" />
+          <ScalarProperty Name="Instructor" ColumnName="Instructor" />
+          <ScalarProperty Name="IdCiudadPadron" ColumnName="IdCiudadPadron" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cuestionarios">
+      <EntityTypeMapping TypeName="IsTypeOf(CuestionariosModel.Cuestionarios)">
+        <MappingFragment StoreEntitySet="Cuestionarios">
+          <ScalarProperty Name="IdCuestionario" ColumnName="IdCuestionario" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+          <ScalarProperty Name="DNI" ColumnName="DNI" />
+          <ScalarProperty Name="Ciudad" ColumnName="Ciudad" />
+          <ScalarProperty Name="Capacitación" ColumnName="Capacitación" />
+          <ScalarProperty Name="EMail" ColumnName="EMail" />
+          <ScalarProperty Name="Teléfono" ColumnName="Teléfono" />
+          <ScalarProperty Name="AsesoramientoInscripcion" ColumnName="AsesoramientoInscripcion" />
+          <ScalarProperty Name="SalónEquipamiento" ColumnName="SalónEquipamiento" />
+          <ScalarProperty Name="Contenidos" ColumnName="Contenidos" />
+          <ScalarProperty Name="IstructorConocimiento" ColumnName="IstructorConocimiento" />
+          <ScalarProperty Name="InstructorClaridad" ColumnName="InstructorClaridad" />
+          <ScalarProperty Name="InstructorTrato" ColumnName="InstructorTrato" />
+          <ScalarProperty Name="ConocimientoAdquirido" ColumnName="ConocimientoAdquirido" />
+          <ScalarProperty Name="Utilidad" ColumnName="Utilidad" />
+          <ScalarProperty Name="SatisfacciónGral" ColumnName="SatisfacciónGral" />
+          <ScalarProperty Name="HariaOtro" ColumnName="HariaOtro" />
+          <ScalarProperty Name="Cual" ColumnName="Cual" />
+          <ScalarProperty Name="Metodologia" ColumnName="Metodologia" />
+          <ScalarProperty Name="Material" ColumnName="Material" />
+          <ScalarProperty Name="Duración" ColumnName="Duración" />
+          <ScalarProperty Name="Predisposicion" ColumnName="Predisposicion" />
+          <ScalarProperty Name="Ejercicios" ColumnName="Ejercicios" />
+          <ScalarProperty Name="TratoAdministrativo" ColumnName="TratoAdministrativo" />
+          <ScalarProperty Name="Sugerencias" ColumnName="Sugerencias" />
+          <ScalarProperty Name="FechaHora" ColumnName="FechaHora" />
+          <ScalarProperty Name="Finalizado" ColumnName="Finalizado" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Referidos">
+      <EntityTypeMapping TypeName="IsTypeOf(CuestionariosModel.Referidos)">
+        <MappingFragment StoreEntitySet="Referidos">
+          <ScalarProperty Name="IdReferido" ColumnName="IdReferido" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+          <ScalarProperty Name="Teléfono" ColumnName="Teléfono" />
+          <ScalarProperty Name="IdCuestionario" ColumnName="IdCuestionario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Instructores">
+      <EntityTypeMapping TypeName="IsTypeOf(CuestionariosModel.Instructores)">
+        <MappingFragment StoreEntitySet="Instructores">
+          <ScalarProperty Name="IdInstructor" ColumnName="IdInstructor" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellido" ColumnName="Apellido" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

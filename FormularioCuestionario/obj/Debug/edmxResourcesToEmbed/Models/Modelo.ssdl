@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Modelo.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ModeloStoreContainer">
+    <EntitySet Name="Ciudades" EntityType="Modelo.Store.Ciudades" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Cuestionarios" EntityType="Modelo.Store.Cuestionarios" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Referidos" EntityType="Modelo.Store.Referidos" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Capacitaciones" EntityType="Modelo.Store.Capacitaciones" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="CuestionariosCiudades" Association="Modelo.Store.CuestionariosCiudades">
+      <End Role="Cuestionarios" EntitySet="Cuestionarios" />
+      <End Role="Ciudades" EntitySet="Ciudades" />
+    </AssociationSet>
+    <AssociationSet Name="CuestionariosReferidos" Association="Modelo.Store.CuestionariosReferidos">
+      <End Role="Cuestionarios" EntitySet="Cuestionarios" />
+      <End Role="Referidos" EntitySet="Referidos" />
+    </AssociationSet>
+    <AssociationSet Name="CapacitacionesCuestionarios" Association="Modelo.Store.CapacitacionesCuestionarios">
+      <End Role="Capacitaciones" EntitySet="Capacitaciones" />
+      <End Role="Cuestionarios" EntitySet="Cuestionarios" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Ciudades">
+    <Key>
+      <PropertyRef Name="IdCiudad" />
+    </Key>
+    <Property Name="IdCiudad" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NombreCiudad" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CP" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Cuestionarios">
+    <Key>
+      <PropertyRef Name="IdCuestionario" />
+    </Key>
+    <Property Name="IdCuestionario" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Apellido" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DNI" Type="int" Nullable="false" />
+    <Property Name="Ciudad" Type="int" Nullable="false" />
+    <Property Name="Capacitación" Type="int" Nullable="false" />
+    <Property Name="EMail" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Teléfono" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="AsesoramientoInscripcion" Type="int" Nullable="false" />
+    <Property Name="SalónEquipamiento" Type="int" Nullable="false" />
+    <Property Name="Conenidos" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IstructorConocimiento" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="InstructorClaridad" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="InstructorTrato" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="ConocimientoAdquirido" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Utilidad" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="SatisfacciónGral" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="HariaOtro" Type="bit" Nullable="false" />
+    <Property Name="CualHaria" Type="nvarchar(max)" Nullable="false" DefaultValue="0" />
+  </EntityType>
+  <EntityType Name="Referidos">
+    <Key>
+      <PropertyRef Name="IdReferido" />
+    </Key>
+    <Property Name="IdReferido" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Apellido" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Teléfono" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IdCuestionario" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Capacitaciones">
+    <Key>
+      <PropertyRef Name="IdCapacitación" />
+    </Key>
+    <Property Name="IdCapacitación" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripción" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <Association Name="CuestionariosCiudades">
+    <End Role="Cuestionarios" Type="Modelo.Store.Cuestionarios" Multiplicity="*" />
+    <End Role="Ciudades" Type="Modelo.Store.Ciudades" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Ciudades">
+        <PropertyRef Name="IdCiudad" />
+      </Principal>
+      <Dependent Role="Cuestionarios">
+        <PropertyRef Name="Ciudad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CuestionariosReferidos">
+    <End Role="Cuestionarios" Type="Modelo.Store.Cuestionarios" Multiplicity="1" />
+    <End Role="Referidos" Type="Modelo.Store.Referidos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cuestionarios">
+        <PropertyRef Name="IdCuestionario" />
+      </Principal>
+      <Dependent Role="Referidos">
+        <PropertyRef Name="IdCuestionario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="CapacitacionesCuestionarios">
+    <End Role="Capacitaciones" Type="Modelo.Store.Capacitaciones" Multiplicity="1" />
+    <End Role="Cuestionarios" Type="Modelo.Store.Cuestionarios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Capacitaciones">
+        <PropertyRef Name="IdCapacitación" />
+      </Principal>
+      <Dependent Role="Cuestionarios">
+        <PropertyRef Name="Capacitación" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

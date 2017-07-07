@@ -1,0 +1,11 @@
+C:\Users\Kunio\Documents\Visual Studio 2017\Projects\FormularioCuestionario\VerReportes\bin\Debug\VerReportes.exe.config
+C:\Users\Kunio\Documents\Visual Studio 2017\Projects\FormularioCuestionario\VerReportes\bin\Debug\VerReportes.exe
+C:\Users\Kunio\Documents\Visual Studio 2017\Projects\FormularioCuestionario\VerReportes\bin\Debug\VerReportes.pdb
+C:\Users\Kunio\Documents\Visual Studio 2017\Projects\FormularioCuestionario\VerReportes\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Kunio\Documents\Visual Studio 2017\Projects\FormularioCuestionario\VerReportes\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Kunio\Documents\Visual Studio 2017\Projects\FormularioCuestionario\VerReportes\obj\Debug\VerReportes.csprojResolveAssemblyReference.cache
+C:\Users\Kunio\Documents\Visual Studio 2017\Projects\FormularioCuestionario\VerReportes\obj\Debug\VerReportes.Form1.resources
+C:\Users\Kunio\Documents\Visual Studio 2017\Projects\FormularioCuestionario\VerReportes\obj\Debug\VerReportes.Properties.Resources.resources
+C:\Users\Kunio\Documents\Visual Studio 2017\Projects\FormularioCuestionario\VerReportes\obj\Debug\VerReportes.csproj.GenerateResource.Cache
+C:\Users\Kunio\Documents\Visual Studio 2017\Projects\FormularioCuestionario\VerReportes\obj\Debug\VerReportes.exe
+C:\Users\Kunio\Documents\Visual Studio 2017\Projects\FormularioCuestionario\VerReportes\obj\Debug\VerReportes.pdb

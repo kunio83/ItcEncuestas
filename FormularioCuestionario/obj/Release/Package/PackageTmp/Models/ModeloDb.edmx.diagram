@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d70422a4f9764c07893e0f763c104c07" Name="Diagram1">
+        <EntityTypeShape EntityType="CuestionariosModel.Capacitaciones" Width="1.5" PointX="0.75" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuestionariosModel.Ciudades" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuestionariosModel.Cuestionarios" Width="1.5" PointX="3" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="CuestionariosModel.Referidos" Width="1.5" PointX="5.25" PointY="3.5" IsExpanded="true" />
+        <AssociationConnector Association="CuestionariosModel.FK_Cuestionarios_Capacitaciones" ManuallyRouted="false" />
+        <AssociationConnector Association="CuestionariosModel.FK_Cuestionarios_Ciudades" ManuallyRouted="false" />
+        <AssociationConnector Association="CuestionariosModel.FK_Referidos_Cuestionarios" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="CuestionariosModel.Instructores" Width="1.5" PointX="8.375" PointY="3.625" />
+        <AssociationConnector Association="CuestionariosModel.CiudadesInstructores" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormularioCuestionario", "FormularioCuestionario\FormularioCuestionario.csproj", "{CE35BC0A-23E2-44D7-B5C9-96D3CF68FB40}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VerReportes", "VerReportes\VerReportes.csproj", "{FBC013FA-F0BF-4273-BAAB-B712BE61E641}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CE35BC0A-23E2-44D7-B5C9-96D3CF68FB40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE35BC0A-23E2-44D7-B5C9-96D3CF68FB40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE35BC0A-23E2-44D7-B5C9-96D3CF68FB40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE35BC0A-23E2-44D7-B5C9-96D3CF68FB40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBC013FA-F0BF-4273-BAAB-B712BE61E641}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBC013FA-F0BF-4273-BAAB-B712BE61E641}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBC013FA-F0BF-4273-BAAB-B712BE61E641}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBC013FA-F0BF-4273-BAAB-B712BE61E641}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
