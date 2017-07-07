@@ -231,6 +231,13 @@
     <Compile Include="Reports\Avginstructores.aspx.designer.cs">
       <DependentUpon>Avginstructores.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Reports\IndicadoresGestion.aspx.cs">
+      <DependentUpon>IndicadoresGestion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\IndicadoresGestion.aspx.designer.cs">
+      <DependentUpon>IndicadoresGestion.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Reports\Totales.aspx.cs">
       <DependentUpon>Totales.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -259,6 +266,7 @@
       <LastGenOutput>ModeloDb.cs</LastGenOutput>
     </Content>
     <Content Include="Reports\Avginstructores.aspx" />
+    <Content Include="Reports\IndicadoresGestion.aspx" />
     <Content Include="Reports\Totales.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -382,6 +390,7 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Reports\Report1.rdlc" />
+    <EmbeddedResource Include="Reports\Report3.rdlc" />
     <EmbeddedResource Include="Reports\Report4.rdlc" />
   </ItemGroup>
   <PropertyGroup>

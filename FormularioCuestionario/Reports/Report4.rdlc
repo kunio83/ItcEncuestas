@@ -462,7 +462,7 @@
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
-                        <Y>=Avg(Fields!IstructorConocimiento.Value)</Y>
+                        <Y>=First(Fields!IstructorConocimiento.Value)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style />
