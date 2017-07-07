@@ -109,7 +109,7 @@
             this.dataTable1BindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.dataTable1BindingNavigator.Name = "dataTable1BindingNavigator";
             this.dataTable1BindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.dataTable1BindingNavigator.Size = new System.Drawing.Size(910, 25);
+            this.dataTable1BindingNavigator.Size = new System.Drawing.Size(1421, 25);
             this.dataTable1BindingNavigator.TabIndex = 0;
             this.dataTable1BindingNavigator.Text = "bindingNavigator1";
             // 
@@ -279,7 +279,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(910, 573);
+            this.ClientSize = new System.Drawing.Size(1421, 581);
             this.Controls.Add(this.dataTable1DataGridView);
             this.Controls.Add(this.dataTable1BindingNavigator);
             this.Name = "Form1";
