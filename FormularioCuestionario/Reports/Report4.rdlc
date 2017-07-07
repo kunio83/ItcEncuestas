@@ -822,7 +822,7 @@
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
-                        <Y>=Avg(Fields!InstructorClaridad.Value)</Y>
+                        <Y>=First(Fields!InstructorClaridad.Value)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style />
@@ -1136,6 +1136,7 @@
                 <VerticalAlign>Top</VerticalAlign>
               </Style>
             </ChartNoDataMessage>
+            <DataSetName>DataSet1</DataSetName>
             <Top>12.36175cm</Top>
             <Left>3.42052cm</Left>
             <Height>6.61396cm</Height>
@@ -1182,7 +1183,7 @@
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
-                        <Y>=Avg(Fields!InstructorTrato.Value)</Y>
+                        <Y>=First(Fields!InstructorTrato.Value)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style />
@@ -1542,7 +1543,7 @@
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
-                        <Y>=Avg(Fields!Predisposicion.Value)</Y>
+                        <Y>=First(Fields!Predisposicion.Value)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style />
