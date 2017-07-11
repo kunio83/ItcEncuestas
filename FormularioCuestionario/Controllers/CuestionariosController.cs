@@ -105,7 +105,7 @@ namespace FormularioCuestionario.Controllers
                 }
                 throw new HttpException((int)HttpStatusCode.BadRequest, "Error; "+ err);
             }
-            return View("Fin");
+            //return View("Fin");
         }
 
 
