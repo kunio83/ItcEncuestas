@@ -76,6 +76,7 @@
     <Property Name="Sugerencias" Type="nvarchar(max)" Nullable="true" />
     <Property Name="FechaHora" Type="datetime" Nullable="false" />
     <Property Name="Finalizado" Type="bit" Nullable="false" DefaultValue="false" />
+    <Property Name="Edad" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Referidos">
     <Key>
@@ -200,6 +201,7 @@
           <Property Name="Sugerencias" Type="String" Nullable="true" />
           <Property Name="FechaHora" Type="DateTime" Nullable="false" />
           <Property Name="Finalizado" Type="Boolean" Nullable="false" DefaultValue="False" />
+          <Property Name="Edad" Type="Int32" Nullable="false" />
         </EntityType>
         <EntityType Name="Referidos">
           <Key>
@@ -346,6 +348,7 @@
           <ScalarProperty Name="Sugerencias" ColumnName="Sugerencias" />
           <ScalarProperty Name="FechaHora" ColumnName="FechaHora" />
           <ScalarProperty Name="Finalizado" ColumnName="Finalizado" />
+          <ScalarProperty Name="Edad" ColumnName="Edad" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

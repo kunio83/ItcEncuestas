@@ -591,3 +591,4 @@ C:\Users\Kunio\Source\Repos\ItcEncuestas\FormularioCuestionario\obj\Debug\Formul
 C:\Users\Kunio\Source\Repos\ItcEncuestas\FormularioCuestionario\obj\Debug\FormularioCuestionario.pdb
 C:\Users\Kunio\Source\Repos\ItcEncuestas\FormularioCuestionario\bin\System.Web.Mvc.dll
 C:\Users\Kunio\Source\Repos\ItcEncuestas\FormularioCuestionario\bin\System.Web.Mvc.xml
+C:\Users\Kunio\Source\Repos\ItcEncuestas\FormularioCuestionario\obj\Debug\FormularioCuestionario.csprojResolveAssemblyReference.cache

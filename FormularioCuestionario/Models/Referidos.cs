@@ -11,16 +11,12 @@ namespace FormularioCuestionario.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-
+    
     public partial class Referidos
     {
         public int IdReferido { get; set; }
-        [Required]
         public string Nombre { get; set; }
-        [Required]
         public string Apellido { get; set; }
-        [Required]
         public string Teléfono { get; set; }
         public int IdCuestionario { get; set; }
     
