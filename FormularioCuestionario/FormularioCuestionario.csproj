@@ -57,7 +57,9 @@
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.3\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.WebForms.140.340.80\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
     </Reference>
@@ -88,17 +90,39 @@
     <Reference Include="MyToolkit, Version=2.5.16.0, Culture=neutral, PublicKeyToken=3e349a1360994d26, processorArchitecture=MSIL">
       <HintPath>..\packages\MyToolkit.2.5.16\lib\portable-net45+wp8+win8+wpa81\MyToolkit.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.Security" />
-    <Reference Include="System.Web.DynamicData" />
-    <Reference Include="System.Web.Entity" />
-    <Reference Include="System.Web.ApplicationServices" />
-    <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
     </Reference>
@@ -117,18 +141,38 @@
     <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
     </Reference>
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Web" />
-    <Reference Include="System.Web.Extensions" />
-    <Reference Include="System.Web.Abstractions" />
-    <Reference Include="System.Web.Routing" />
-    <Reference Include="System.Xml" />
-    <Reference Include="System.Configuration" />
-    <Reference Include="System.Web.Services" />
-    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Abstractions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Routing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Net.Http">
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Net.Http.WebRequest">
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Web.Optimization">
       <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
@@ -174,6 +218,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\CapacitacionesController.cs" />
     <Compile Include="Controllers\CiudadesController.cs" />
+    <None Include="Controllers\CuestionariosController" />
     <Compile Include="Controllers\CuestionariosController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\InstructoresController.cs" />
@@ -239,6 +284,16 @@
       <DependentUpon>Totales.aspx</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
+    <Content Include="Views\Cuestionarios\Create.cshtml" />
+    <Content Include="Views\Cuestionarios\Delete.cshtml" />
+    <Content Include="Views\Cuestionarios\Details.cshtml" />
+    <Content Include="Views\Cuestionarios\Edit.cshtml" />
+    <Content Include="Views\Cuestionarios\Index.cshtml" />
+    <Content Include="Views\Cuestionarios\CuestionarioActual.cshtml" />
+    <Content Include="Views\Cuestionarios\Finalizado.cshtml" />
+    <Content Include="Views\Cuestionarios\Fin.cshtml" />
+    <Content Include="Views\Cuestionarios\Error.cshtml" />
+    <Content Include="Views\Reportes\Reclamos.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -337,17 +392,17 @@
     <Content Include="Views\Referidos\Details.cshtml" />
     <Content Include="Views\Referidos\Edit.cshtml" />
     <Content Include="Views\Referidos\Index.cshtml" />
-    <Content Include="Views\Cuestionarios\CuestionarioActual.cshtml" />
-    <Content Include="Views\Cuestionarios\Fin.cshtml" />
-    <Content Include="Views\Cuestionarios\__Create.cshtml" />
-    <Content Include="Views\Cuestionarios\Delete.cshtml" />
-    <Content Include="Views\Cuestionarios\Details.cshtml" />
-    <Content Include="Views\Cuestionarios\__Edit.cshtml" />
-    <Content Include="Views\Cuestionarios\Index.cshtml" />
+    <Content Include="Views\_Cuestionarios\CuestionarioActual.cshtml" />
+    <Content Include="Views\_Cuestionarios\Fin.cshtml" />
+    <Content Include="Views\_Cuestionarios\__Create.cshtml" />
+    <Content Include="Views\_Cuestionarios\Delete.cshtml" />
+    <Content Include="Views\_Cuestionarios\Details.cshtml" />
+    <Content Include="Views\_Cuestionarios\__Edit.cshtml" />
+    <Content Include="Views\_Cuestionarios\Index.cshtml" />
     <Content Include="Views\Shared\EditorTemplates\Collection.cshtml" />
-    <Content Include="Views\Cuestionarios\Error.cshtml" />
-    <Content Include="Views\Cuestionarios\Index Filter.cshtml" />
-    <Content Include="Views\Cuestionarios\Finalizado.cshtml" />
+    <Content Include="Views\_Cuestionarios\Error.cshtml" />
+    <Content Include="Views\_Cuestionarios\Index Filter.cshtml" />
+    <Content Include="Views\_Cuestionarios\Finalizado.cshtml" />
     <Content Include="Views\Ciudades\Create.cshtml" />
     <Content Include="Views\Ciudades\Delete.cshtml" />
     <Content Include="Views\Ciudades\Details.cshtml" />
@@ -358,8 +413,8 @@
     <Content Include="Views\Instructores\Details.cshtml" />
     <Content Include="Views\Instructores\Edit.cshtml" />
     <Content Include="Views\Instructores\Index.cshtml" />
-    <Content Include="Views\Cuestionarios\Create.cshtml" />
-    <Content Include="Views\Cuestionarios\Edit.cshtml" />
+    <Content Include="Views\_Cuestionarios\Create.cshtml" />
+    <Content Include="Views\_Cuestionarios\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

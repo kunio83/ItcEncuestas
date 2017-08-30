@@ -71,6 +71,8 @@
     <Property Name="Sugerencias" Type="nvarchar(max)" Nullable="true" />
     <Property Name="FechaHora" Type="datetime" Nullable="false" />
     <Property Name="Finalizado" Type="bit" Nullable="false" DefaultValue="false" />
+    <Property Name="Edad" Type="int" Nullable="false" />
+    <Property Name="Ocupacion" Type="nvarchar(max)" Nullable="false" />
   </EntityType>
   <EntityType Name="Referidos">
     <Key>

@@ -2,8 +2,8 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 06/21/2017 13:41:06
--- Generated from EDMX file: C:\Users\Kunio\Documents\Visual Studio 2017\Projects\FormularioCuestionario\FormularioCuestionario\Models\ModeloDb.edmx
+-- Date Created: 08/23/2017 13:23:15
+-- Generated from EDMX file: C:\Users\Kunio\Source\Repos\ItcEncuestas\FormularioCuestionario\Models\ModeloDb.edmx
 -- --------------------------------------------------
 
 SET QUOTED_IDENTIFIER OFF;
@@ -99,7 +99,9 @@ CREATE TABLE [dbo].[Cuestionarios] (
     [TratoAdministrativo] int  NOT NULL,
     [Sugerencias] nvarchar(max)  NULL,
     [FechaHora] datetime  NOT NULL,
-    [Finalizado] bit  NOT NULL
+    [Finalizado] bit  NOT NULL,
+    [Edad] int  NOT NULL,
+    [Ocupacion] nvarchar(max)  NOT NULL
 );
 GO
 

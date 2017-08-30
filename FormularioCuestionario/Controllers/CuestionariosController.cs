@@ -22,7 +22,6 @@ namespace FormularioCuestionario.Controllers
         {
             return View();
         }
-
         // GET: Cuestionarios
         public ActionResult Index()
         {
@@ -55,7 +54,7 @@ namespace FormularioCuestionario.Controllers
 
         // POST: Cuestionarios/Edit/5
         [HttpPost]
-        public ActionResult CuestionarioActual([Bind(Include = "IdCuestionario,Nombre,Apellido,DNI,Ciudad,Capacitación,EMail,Teléfono,AsesoramientoInscripcion,SalónEquipamiento,Contenidos,IstructorConocimiento,InstructorClaridad,InstructorTrato,ConocimientoAdquirido,Utilidad,SatisfacciónGral,HariaOtro,Cual,Metodologia,Material,Duración,Predisposicion,Ejercicios,TratoAdministrativo,Sugerencias")] Cuestionarios cuestionarios)
+        public ActionResult CuestionarioActual([Bind(Include = "IdCuestionario,Nombre,Apellido,DNI,Ciudad,Capacitación,EMail,Teléfono,AsesoramientoInscripcion,SalónEquipamiento,Contenidos,IstructorConocimiento,InstructorClaridad,InstructorTrato,ConocimientoAdquirido,Utilidad,SatisfacciónGral,HariaOtro,Cual,Metodologia,Material,Duración,Predisposicion,Ejercicios,TratoAdministrativo,Sugerencias,FechaHora,Finalizado,Edad,Ocupacion")] Cuestionarios cuestionarios)
         {
             try
             {
@@ -71,7 +70,7 @@ namespace FormularioCuestionario.Controllers
                     string chk_9 = (((string)Request.Form["chk_9"]).Contains("true")) ? "9" : "";
                     string chk_10 = (((string)Request.Form["chk_10"]).Contains("true")) ? "10" : "";
 
-                    string cual = String.Format("{0}|{1}|{2}|{3}|{4}|{5}|{6}|{7}",chk_3, chk_4, chk_5, chk_6, chk_7, chk_8, chk_9, chk_10 );
+                    string cual = String.Format("{0}|{1}|{2}|{3}|{4}|{5}|{6}|{7}", chk_3, chk_4, chk_5, chk_6, chk_7, chk_8, chk_9, chk_10);
                     if (String.IsNullOrEmpty(cuestionarios.EMail))
                         cuestionarios.EMail = "no_puso_mail@nada.com";
                     if (String.IsNullOrEmpty(cuestionarios.Sugerencias))
@@ -83,7 +82,7 @@ namespace FormularioCuestionario.Controllers
                     db.Entry(cuestionarios).State = EntityState.Modified;
                     db.SaveChanges();
                     //return View("Fin");
-                    return RedirectToAction("Create", "Referidos",new { IdCuestionario = cuestionarios.IdCuestionario});
+                    return RedirectToAction("Create", "Referidos", new { IdCuestionario = cuestionarios.IdCuestionario });
                 }
                 ViewBag.Capacitación = new SelectList(db.Capacitaciones, "IdCapacitación", "Descripción", cuestionarios.Capacitación);
                 ViewBag.Ciudad = new SelectList(db.Ciudades, "IdCiudad", "NombreCiudad", cuestionarios.Ciudad);
@@ -94,20 +93,19 @@ namespace FormularioCuestionario.Controllers
                 string err = "";
                 foreach (var eve in e.EntityValidationErrors)
                 {
-                    
+
                     err += String.Format("Entity of type \"{0}\" in state \"{1}\" has the following validation errors:",
                         eve.Entry.Entity.GetType().Name, eve.Entry.State);
                     foreach (var ve in eve.ValidationErrors)
                     {
-                        err+=String.Format("- Property: \"{0}\", Error: \"{1}\"",
+                        err += String.Format("- Property: \"{0}\", Error: \"{1}\"",
                             ve.PropertyName, ve.ErrorMessage);
                     }
                 }
-                throw new HttpException((int)HttpStatusCode.BadRequest, "Error; "+ err);
+                throw new HttpException((int)HttpStatusCode.BadRequest, "Error; " + err);
             }
             //return View("Fin");
         }
-
 
         // GET: Cuestionarios/Details/5
         public ActionResult Details(int? id)
@@ -136,7 +134,7 @@ namespace FormularioCuestionario.Controllers
         // Para protegerse de ataques de publicación excesiva, habilite las propiedades específicas a las que desea enlazarse. Para obtener 
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        public ActionResult Create([Bind(Include = "IdCuestionario,Nombre,Apellido,DNI,Ciudad,Capacitación,EMail,Teléfono,AsesoramientoInscripcion,SalónEquipamiento,Contenidos,IstructorConocimiento,InstructorClaridad,InstructorTrato,ConocimientoAdquirido,Utilidad,SatisfacciónGral,HariaOtro,Cual,Metodologia,Material,Duración,Predisposicion,Ejercicios,TratoAdministrativo,Sugerencias")] Cuestionarios cuestionarios)
+        public ActionResult Create([Bind(Include = "IdCuestionario,Nombre,Apellido,DNI,Ciudad,Capacitación,EMail,Teléfono,AsesoramientoInscripcion,SalónEquipamiento,Contenidos,IstructorConocimiento,InstructorClaridad,InstructorTrato,ConocimientoAdquirido,Utilidad,SatisfacciónGral,HariaOtro,Cual,Metodologia,Material,Duración,Predisposicion,Ejercicios,TratoAdministrativo,Sugerencias,FechaHora,Finalizado,Edad,Ocupacion")] Cuestionarios cuestionarios)
         {
             if (ModelState.IsValid)
             {
@@ -173,7 +171,7 @@ namespace FormularioCuestionario.Controllers
         // más información vea https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "IdCuestionario,Nombre,Apellido,DNI,Ciudad,Capacitación,EMail,Teléfono,AsesoramientoInscripcion,SalónEquipamiento,Contenidos,IstructorConocimiento,InstructorClaridad,InstructorTrato,ConocimientoAdquirido,Utilidad,SatisfacciónGral,HariaOtro,Cual,Metodologia,Material,Duración,Predisposicion,Ejercicios,TratoAdministrativo,Sugerencias")] Cuestionarios cuestionarios)
+        public ActionResult Edit([Bind(Include = "IdCuestionario,Nombre,Apellido,DNI,Ciudad,Capacitación,EMail,Teléfono,AsesoramientoInscripcion,SalónEquipamiento,Contenidos,IstructorConocimiento,InstructorClaridad,InstructorTrato,ConocimientoAdquirido,Utilidad,SatisfacciónGral,HariaOtro,Cual,Metodologia,Material,Duración,Predisposicion,Ejercicios,TratoAdministrativo,Sugerencias,FechaHora,Finalizado,Edad,Ocupacion")] Cuestionarios cuestionarios)
         {
             try
             {
@@ -181,11 +179,8 @@ namespace FormularioCuestionario.Controllers
                 {
                     cuestionarios.FechaHora = DateTime.Now;
                     db.Entry(cuestionarios).State = EntityState.Modified;
-                    
                     db.SaveChanges();
-                    //return RedirectToAction("Index");
-                    //return View("Fin");
-                    return RedirectToAction("Create","Referidos");
+                    return RedirectToAction("Create", "Referidos");
                 }
                 ViewBag.Capacitación = new SelectList(db.Capacitaciones, "IdCapacitación", "Descripción", cuestionarios.Capacitación);
                 ViewBag.Ciudad = new SelectList(db.Ciudades, "IdCiudad", "NombreCiudad", cuestionarios.Ciudad);

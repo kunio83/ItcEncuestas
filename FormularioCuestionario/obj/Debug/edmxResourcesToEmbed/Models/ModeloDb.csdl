@@ -53,6 +53,8 @@
     <Property Name="Sugerencias" Type="String" Nullable="true" />
     <Property Name="FechaHora" Type="DateTime" Nullable="false" />
     <Property Name="Finalizado" Type="Boolean" Nullable="false" DefaultValue="False" />
+    <Property Name="Edad" Type="Int32" Nullable="false" />
+    <Property Name="Ocupacion" Type="String" Nullable="false" />
   </EntityType>
   <EntityType Name="Referidos">
     <Key>

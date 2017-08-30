@@ -77,6 +77,7 @@
     <Property Name="FechaHora" Type="datetime" Nullable="false" />
     <Property Name="Finalizado" Type="bit" Nullable="false" DefaultValue="false" />
     <Property Name="Edad" Type="int" Nullable="false" />
+    <Property Name="Ocupacion" Type="nvarchar(max)" Nullable="false" />
   </EntityType>
   <EntityType Name="Referidos">
     <Key>
@@ -202,6 +203,7 @@
           <Property Name="FechaHora" Type="DateTime" Nullable="false" />
           <Property Name="Finalizado" Type="Boolean" Nullable="false" DefaultValue="False" />
           <Property Name="Edad" Type="Int32" Nullable="false" />
+          <Property Name="Ocupacion" Type="String" Nullable="false" />
         </EntityType>
         <EntityType Name="Referidos">
           <Key>
@@ -349,6 +351,7 @@
           <ScalarProperty Name="FechaHora" ColumnName="FechaHora" />
           <ScalarProperty Name="Finalizado" ColumnName="Finalizado" />
           <ScalarProperty Name="Edad" ColumnName="Edad" />
+          <ScalarProperty Name="Ocupacion" ColumnName="Ocupacion" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

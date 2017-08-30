@@ -7,713 +7,779 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
   <PropertyGroup>
     <TimeStampOfAssociatedLegacyPublishXmlFile />
     <_NewBackgroundProfile>False</_NewBackgroundProfile>
-    <_PublishTargetUrl>C:\Users\Facundo\Source\Repos\ItcEncuestas\FormularioCuestionario\bin\Release\PublishOutput</_PublishTargetUrl>
+    <_PublishTargetUrl>C:\Users\Kunio\Source\Repos\ItcEncuestas\FormularioCuestionario\bin\Release\PublishOutput</_PublishTargetUrl>
   </PropertyGroup>
   <ItemGroup>
     <File Include="ApplicationInsights.config">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:04</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.dll">
-      <publishTime>07/07/2017 10:58:51</publishTime>
+      <publishTime>07/07/2017 10:52:21</publishTime>
     </File>
     <File Include="bin/Antlr3.Runtime.pdb">
-      <publishTime>02/22/2013 08:43:40</publishTime>
+      <publishTime>07/07/2017 10:52:21</publishTime>
     </File>
     <File Include="bin/ApplicationInsights.config">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:04</publishTime>
     </File>
     <File Include="bin/BeginCollectionItem.dll">
-      <publishTime>07/07/2017 10:58:51</publishTime>
+      <publishTime>07/07/2017 10:52:21</publishTime>
     </File>
     <File Include="bin/de/Microsoft.ReportViewer.Common.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/de/Microsoft.ReportViewer.DataVisualization.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/de/Microsoft.ReportViewer.Design.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/de/Microsoft.ReportViewer.WebDesign.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/de/Microsoft.ReportViewer.WebForms.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/de/Microsoft.ReportViewer.WinForms.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/EntityFramework.dll">
-      <publishTime>07/07/2017 10:58:51</publishTime>
+      <publishTime>07/07/2017 10:52:22</publishTime>
     </File>
     <File Include="bin/EntityFramework.SqlServer.dll">
-      <publishTime>07/07/2017 10:58:51</publishTime>
+      <publishTime>07/07/2017 10:52:22</publishTime>
     </File>
     <File Include="bin/EnvDTE.dll">
-      <publishTime>04/21/2017 15:10:49</publishTime>
+      <publishTime>07/05/2017 10:07:35</publishTime>
     </File>
     <File Include="bin/EnvDTE80.dll">
-      <publishTime>04/21/2017 15:10:49</publishTime>
+      <publishTime>07/05/2017 10:07:35</publishTime>
     </File>
     <File Include="bin/es/Microsoft.ReportViewer.Common.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/es/Microsoft.ReportViewer.DataVisualization.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/es/Microsoft.ReportViewer.Design.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/es/Microsoft.ReportViewer.WebDesign.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/es/Microsoft.ReportViewer.WebForms.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/es/Microsoft.ReportViewer.WinForms.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/es/Microsoft.VisualStudio.Data.Core.resources.dll">
-      <publishTime>04/21/2017 15:10:49</publishTime>
+      <publishTime>07/05/2017 10:07:35</publishTime>
     </File>
     <File Include="bin/es/Microsoft.VisualStudio.Data.Services.resources.dll">
-      <publishTime>04/21/2017 15:10:49</publishTime>
+      <publishTime>07/05/2017 10:07:35</publishTime>
     </File>
     <File Include="bin/es/Microsoft.VisualStudio.GraphModel.resources.dll">
       <publishTime>07/07/2015 01:26:06</publishTime>
     </File>
     <File Include="bin/es/System.Web.Helpers.resources.dll">
-      <publishTime>07/07/2017 10:58:51</publishTime>
+      <publishTime>01/28/2015 04:04:36</publishTime>
     </File>
     <File Include="bin/es/System.Web.Mvc.resources.dll">
       <publishTime>07/07/2017 10:58:51</publishTime>
     </File>
     <File Include="bin/es/System.Web.Optimization.resources.dll">
-      <publishTime>07/07/2017 10:58:51</publishTime>
+      <publishTime>02/11/2014 15:28:40</publishTime>
     </File>
     <File Include="bin/es/System.Web.Razor.resources.dll">
-      <publishTime>07/07/2017 10:58:51</publishTime>
+      <publishTime>01/28/2015 04:02:36</publishTime>
     </File>
     <File Include="bin/es/System.Web.WebPages.Deployment.resources.dll">
-      <publishTime>07/07/2017 10:58:51</publishTime>
+      <publishTime>01/28/2015 04:04:36</publishTime>
     </File>
     <File Include="bin/es/System.Web.WebPages.Razor.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>01/28/2015 04:04:36</publishTime>
     </File>
     <File Include="bin/es/System.Web.WebPages.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>01/28/2015 04:04:36</publishTime>
     </File>
     <File Include="bin/FormularioCuestionario.dll">
-      <publishTime>07/07/2017 12:43:40</publishTime>
+      <publishTime>08/25/2017 13:17:35</publishTime>
     </File>
     <File Include="bin/FormularioCuestionario.pdb">
-      <publishTime>07/06/2017 15:20:59</publishTime>
+      <publishTime>08/25/2017 13:17:35</publishTime>
     </File>
     <File Include="bin/fr/Microsoft.ReportViewer.Common.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/fr/Microsoft.ReportViewer.DataVisualization.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/fr/Microsoft.ReportViewer.Design.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/fr/Microsoft.ReportViewer.WebDesign.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/fr/Microsoft.ReportViewer.WebForms.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/fr/Microsoft.ReportViewer.WinForms.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/it/Microsoft.ReportViewer.Common.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/it/Microsoft.ReportViewer.DataVisualization.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/it/Microsoft.ReportViewer.Design.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/it/Microsoft.ReportViewer.WebDesign.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/it/Microsoft.ReportViewer.WebForms.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/it/Microsoft.ReportViewer.WinForms.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/ja/Microsoft.ReportViewer.Common.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/ja/Microsoft.ReportViewer.DataVisualization.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/ja/Microsoft.ReportViewer.Design.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/ja/Microsoft.ReportViewer.WebDesign.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/ja/Microsoft.ReportViewer.WebForms.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/ja/Microsoft.ReportViewer.WinForms.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/ko/Microsoft.ReportViewer.Common.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/ko/Microsoft.ReportViewer.DataVisualization.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/ko/Microsoft.ReportViewer.Design.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/ko/Microsoft.ReportViewer.WebDesign.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/ko/Microsoft.ReportViewer.WebForms.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/ko/Microsoft.ReportViewer.WinForms.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Agent.Intercept.dll">
-      <publishTime>07/07/2017 10:58:51</publishTime>
+      <publishTime>07/07/2017 10:52:23</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.DependencyCollector.dll">
-      <publishTime>07/07/2017 10:58:51</publishTime>
+      <publishTime>07/07/2017 10:52:23</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.PerfCounterCollector.dll">
-      <publishTime>07/07/2017 10:58:51</publishTime>
+      <publishTime>07/07/2017 10:52:23</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.ServerTelemetryChannel.dll">
-      <publishTime>07/07/2017 10:58:51</publishTime>
+      <publishTime>07/07/2017 10:52:23</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.Web.dll">
-      <publishTime>07/07/2017 10:58:51</publishTime>
+      <publishTime>07/07/2017 10:52:23</publishTime>
     </File>
     <File Include="bin/Microsoft.AI.WindowsServer.dll">
-      <publishTime>07/07/2017 10:58:51</publishTime>
+      <publishTime>07/07/2017 10:52:23</publishTime>
     </File>
     <File Include="bin/Microsoft.ApplicationInsights.dll">
-      <publishTime>07/07/2017 10:58:51</publishTime>
+      <publishTime>07/07/2017 10:52:22</publishTime>
     </File>
     <File Include="bin/Microsoft.Build.Framework.dll">
-      <publishTime>06/20/2016 14:45:20</publishTime>
+      <publishTime>07/07/2015 00:51:38</publishTime>
     </File>
     <File Include="bin/Microsoft.Build.Tasks.Core.dll">
-      <publishTime>06/20/2016 14:45:20</publishTime>
+      <publishTime>07/07/2015 00:51:38</publishTime>
     </File>
     <File Include="bin/Microsoft.Build.Utilities.Core.dll">
-      <publishTime>06/20/2016 14:45:20</publishTime>
+      <publishTime>07/07/2015 00:51:38</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:24</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CSharp.dll">
+      <publishTime>05/28/2014 04:35:42</publishTime>
     </File>
     <File Include="bin/Microsoft.MSXML.dll">
-      <publishTime>04/21/2017 15:10:49</publishTime>
+      <publishTime>07/05/2017 10:07:35</publishTime>
     </File>
     <File Include="bin/Microsoft.ReportViewer.Common.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:25</publishTime>
     </File>
     <File Include="bin/Microsoft.ReportViewer.DataVisualization.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:25</publishTime>
     </File>
     <File Include="bin/Microsoft.ReportViewer.Design.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:25</publishTime>
     </File>
     <File Include="bin/Microsoft.ReportViewer.ProcessingObjectModel.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:25</publishTime>
     </File>
     <File Include="bin/Microsoft.ReportViewer.WebDesign.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:25</publishTime>
     </File>
     <File Include="bin/Microsoft.ReportViewer.WebForms.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:25</publishTime>
     </File>
     <File Include="bin/Microsoft.ReportViewer.WinForms.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:25</publishTime>
     </File>
     <File Include="bin/Microsoft.SqlServer.Types.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:27</publishTime>
     </File>
     <File Include="bin/Microsoft.VisualStudio.ComponentModelHost.dll">
-      <publishTime>06/20/2016 14:45:20</publishTime>
+      <publishTime>07/07/2015 00:51:38</publishTime>
     </File>
     <File Include="bin/Microsoft.VisualStudio.Data.Core.dll">
-      <publishTime>04/21/2017 15:10:49</publishTime>
+      <publishTime>07/05/2017 10:07:35</publishTime>
     </File>
     <File Include="bin/Microsoft.VisualStudio.Data.Services.dll">
-      <publishTime>04/21/2017 15:10:49</publishTime>
+      <publishTime>07/05/2017 10:07:35</publishTime>
     </File>
     <File Include="bin/Microsoft.VisualStudio.Debugger.Interop.11.0.dll">
-      <publishTime>04/21/2017 15:10:49</publishTime>
+      <publishTime>07/11/2017 10:07:03</publishTime>
     </File>
     <File Include="bin/Microsoft.VisualStudio.Debugger.InteropA.dll">
-      <publishTime>04/21/2017 15:10:49</publishTime>
+      <publishTime>07/11/2017 10:07:03</publishTime>
     </File>
     <File Include="bin/Microsoft.VisualStudio.GraphModel.dll">
-      <publishTime>06/20/2016 14:45:20</publishTime>
+      <publishTime>07/07/2015 00:51:38</publishTime>
     </File>
     <File Include="bin/Microsoft.VisualStudio.ManagedInterfaces.dll">
-      <publishTime>04/21/2017 15:10:49</publishTime>
+      <publishTime>07/05/2017 10:07:35</publishTime>
     </File>
     <File Include="bin/Microsoft.VisualStudio.OLE.Interop.dll">
-      <publishTime>04/21/2017 15:10:49</publishTime>
+      <publishTime>07/05/2017 10:07:35</publishTime>
     </File>
     <File Include="bin/Microsoft.VisualStudio.ProjectAggregator.dll">
-      <publishTime>04/21/2017 15:10:49</publishTime>
+      <publishTime>07/05/2017 10:07:35</publishTime>
     </File>
     <File Include="bin/Microsoft.VisualStudio.Shell.Interop.10.0.dll">
-      <publishTime>04/21/2017 15:10:49</publishTime>
+      <publishTime>07/05/2017 10:07:35</publishTime>
     </File>
     <File Include="bin/Microsoft.VisualStudio.Shell.Interop.11.0.dll">
-      <publishTime>04/21/2017 15:10:49</publishTime>
+      <publishTime>07/05/2017 10:07:35</publishTime>
     </File>
     <File Include="bin/Microsoft.VisualStudio.Shell.Interop.8.0.dll">
-      <publishTime>04/21/2017 15:10:49</publishTime>
+      <publishTime>07/05/2017 10:07:35</publishTime>
     </File>
     <File Include="bin/Microsoft.VisualStudio.Shell.Interop.9.0.dll">
-      <publishTime>04/21/2017 15:10:49</publishTime>
+      <publishTime>07/05/2017 10:07:35</publishTime>
     </File>
     <File Include="bin/Microsoft.VisualStudio.Shell.Interop.dll">
-      <publishTime>04/21/2017 15:10:49</publishTime>
+      <publishTime>07/05/2017 10:07:35</publishTime>
     </File>
     <File Include="bin/Microsoft.VisualStudio.TemplateWizardInterface.dll">
-      <publishTime>04/21/2017 15:10:49</publishTime>
+      <publishTime>07/05/2017 10:07:35</publishTime>
     </File>
     <File Include="bin/Microsoft.VisualStudio.TextManager.Interop.10.0.dll">
-      <publishTime>04/21/2017 15:10:49</publishTime>
+      <publishTime>07/05/2017 10:07:35</publishTime>
     </File>
     <File Include="bin/Microsoft.VisualStudio.TextManager.Interop.8.0.dll">
-      <publishTime>04/21/2017 15:10:49</publishTime>
+      <publishTime>07/05/2017 10:07:35</publishTime>
     </File>
     <File Include="bin/Microsoft.VisualStudio.TextManager.Interop.dll">
-      <publishTime>04/21/2017 15:10:49</publishTime>
+      <publishTime>07/05/2017 10:07:35</publishTime>
     </File>
     <File Include="bin/Microsoft.VisualStudio.VSHelp.dll">
-      <publishTime>04/21/2017 15:10:49</publishTime>
+      <publishTime>07/05/2017 10:07:35</publishTime>
     </File>
     <File Include="bin/Microsoft.VisualStudio.WCFReference.Interop.dll">
-      <publishTime>04/21/2017 15:10:49</publishTime>
+      <publishTime>07/05/2017 10:07:35</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:27</publishTime>
     </File>
     <File Include="bin/MyToolkit.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:27</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
-      <publishTime>07/07/2017 10:58:53</publishTime>
+      <publishTime>07/07/2017 10:52:28</publishTime>
     </File>
     <File Include="bin/pt/Microsoft.ReportViewer.Common.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/pt/Microsoft.ReportViewer.DataVisualization.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/pt/Microsoft.ReportViewer.Design.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/pt/Microsoft.ReportViewer.WebDesign.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/pt/Microsoft.ReportViewer.WebForms.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/pt/Microsoft.ReportViewer.WinForms.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:25</publishTime>
     </File>
     <File Include="bin/roslyn/csc.exe.config">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:25</publishTime>
     </File>
     <File Include="bin/roslyn/csc.rsp">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:25</publishTime>
     </File>
     <File Include="bin/roslyn/csi.exe">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:25</publishTime>
     </File>
     <File Include="bin/roslyn/csi.rsp">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:25</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:24</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:24</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:24</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:24</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:24</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:24</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:24</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:24</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:24</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:24</publishTime>
     </File>
     <File Include="bin/roslyn/System.AppContext.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:24</publishTime>
     </File>
     <File Include="bin/roslyn/System.Collections.Immutable.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:24</publishTime>
     </File>
     <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:25</publishTime>
     </File>
     <File Include="bin/roslyn/System.IO.FileSystem.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:25</publishTime>
     </File>
     <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:25</publishTime>
     </File>
     <File Include="bin/roslyn/System.Reflection.Metadata.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:25</publishTime>
     </File>
     <File Include="bin/roslyn/vbc.exe">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:25</publishTime>
     </File>
     <File Include="bin/roslyn/vbc.exe.config">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:25</publishTime>
     </File>
     <File Include="bin/roslyn/vbc.rsp">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:25</publishTime>
     </File>
     <File Include="bin/roslyn/VBCSCompiler.exe">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:25</publishTime>
     </File>
     <File Include="bin/roslyn/VBCSCompiler.exe.config">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:25</publishTime>
     </File>
     <File Include="bin/ru/Microsoft.ReportViewer.Common.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/ru/Microsoft.ReportViewer.DataVisualization.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/ru/Microsoft.ReportViewer.Design.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/ru/Microsoft.ReportViewer.WebDesign.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/ru/Microsoft.ReportViewer.WebForms.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/ru/Microsoft.ReportViewer.WinForms.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:26</publishTime>
     </File>
     <File Include="bin/SqlServerTypes/x64/msvcr120.dll">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="bin/SqlServerTypes/x64/SqlServerSpatial140.dll">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="bin/SqlServerTypes/x86/msvcr120.dll">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="bin/SqlServerTypes/x86/SqlServerSpatial140.dll">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="bin/stdole.dll">
-      <publishTime>04/21/2017 15:10:49</publishTime>
+      <publishTime>07/05/2017 10:07:35</publishTime>
+    </File>
+    <File Include="bin/System.ComponentModel.DataAnnotations.dll">
+      <publishTime>05/28/2014 04:35:42</publishTime>
+    </File>
+    <File Include="bin/System.Configuration.dll">
+      <publishTime>05/28/2014 04:35:42</publishTime>
+    </File>
+    <File Include="bin/System.Data.DataSetExtensions.dll">
+      <publishTime>05/28/2014 04:35:42</publishTime>
+    </File>
+    <File Include="bin/System.Data.dll">
+      <publishTime>05/28/2014 04:35:42</publishTime>
+    </File>
+    <File Include="bin/System.dll">
+      <publishTime>05/28/2014 04:35:42</publishTime>
+    </File>
+    <File Include="bin/System.Drawing.dll">
+      <publishTime>05/28/2014 04:35:42</publishTime>
+    </File>
+    <File Include="bin/System.EnterpriseServices.dll">
+      <publishTime>05/28/2014 04:35:42</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.dll">
+      <publishTime>05/28/2014 04:35:42</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.WebRequest.dll">
+      <publishTime>05/28/2014 04:35:42</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.Serialization.dll">
+      <publishTime>05/28/2014 04:35:42</publishTime>
+    </File>
+    <File Include="bin/System.Security.dll">
+      <publishTime>05/28/2014 04:35:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.Abstractions.dll">
+      <publishTime>05/28/2014 04:35:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.ApplicationServices.dll">
+      <publishTime>05/28/2014 04:35:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.dll">
+      <publishTime>05/28/2014 04:35:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.DynamicData.dll">
+      <publishTime>05/28/2014 04:35:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.Entity.dll">
+      <publishTime>05/28/2014 04:35:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.Extensions.dll">
+      <publishTime>05/28/2014 04:35:42</publishTime>
     </File>
     <File Include="bin/System.Web.Helpers.dll">
-      <publishTime>07/07/2017 10:58:51</publishTime>
+      <publishTime>07/07/2017 10:52:24</publishTime>
     </File>
     <File Include="bin/System.Web.Mvc.dll">
-      <publishTime>07/07/2017 10:58:51</publishTime>
+      <publishTime>01/28/2015 04:02:18</publishTime>
     </File>
     <File Include="bin/System.Web.Optimization.dll">
-      <publishTime>07/07/2017 10:58:51</publishTime>
+      <publishTime>07/07/2017 10:52:23</publishTime>
     </File>
     <File Include="bin/System.Web.Razor.dll">
-      <publishTime>07/07/2017 10:58:51</publishTime>
+      <publishTime>07/07/2017 10:52:23</publishTime>
+    </File>
+    <File Include="bin/System.Web.Routing.dll">
+      <publishTime>05/28/2014 04:35:42</publishTime>
+    </File>
+    <File Include="bin/System.Web.Services.dll">
+      <publishTime>05/28/2014 04:35:42</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.Deployment.dll">
-      <publishTime>07/07/2017 10:58:51</publishTime>
+      <publishTime>07/07/2017 10:52:24</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.dll">
-      <publishTime>07/07/2017 10:58:51</publishTime>
+      <publishTime>07/07/2017 10:52:24</publishTime>
     </File>
     <File Include="bin/System.Web.WebPages.Razor.dll">
-      <publishTime>07/07/2017 10:58:51</publishTime>
+      <publishTime>07/07/2017 10:52:24</publishTime>
+    </File>
+    <File Include="bin/System.Xml.dll">
+      <publishTime>05/28/2014 04:35:42</publishTime>
+    </File>
+    <File Include="bin/System.Xml.Linq.dll">
+      <publishTime>05/28/2014 04:35:42</publishTime>
     </File>
     <File Include="bin/VSLangProj.dll">
-      <publishTime>04/21/2017 15:10:49</publishTime>
+      <publishTime>07/05/2017 10:07:35</publishTime>
     </File>
     <File Include="bin/VSLangProj2.dll">
-      <publishTime>04/21/2017 15:10:49</publishTime>
+      <publishTime>07/05/2017 10:07:35</publishTime>
     </File>
     <File Include="bin/VSLangProj80.dll">
-      <publishTime>04/21/2017 15:10:49</publishTime>
+      <publishTime>07/05/2017 10:07:35</publishTime>
     </File>
     <File Include="bin/WebGrease.dll">
-      <publishTime>07/07/2017 10:58:53</publishTime>
+      <publishTime>07/07/2017 10:52:28</publishTime>
     </File>
     <File Include="bin/zh-CHS/Microsoft.ReportViewer.Common.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:27</publishTime>
     </File>
     <File Include="bin/zh-CHS/Microsoft.ReportViewer.DataVisualization.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:27</publishTime>
     </File>
     <File Include="bin/zh-CHS/Microsoft.ReportViewer.Design.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:27</publishTime>
     </File>
     <File Include="bin/zh-CHS/Microsoft.ReportViewer.WebDesign.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:27</publishTime>
     </File>
     <File Include="bin/zh-CHS/Microsoft.ReportViewer.WebForms.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:27</publishTime>
     </File>
     <File Include="bin/zh-CHS/Microsoft.ReportViewer.WinForms.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:27</publishTime>
     </File>
     <File Include="bin/zh-CHT/Microsoft.ReportViewer.Common.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:27</publishTime>
     </File>
     <File Include="bin/zh-CHT/Microsoft.ReportViewer.DataVisualization.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:27</publishTime>
     </File>
     <File Include="bin/zh-CHT/Microsoft.ReportViewer.Design.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:27</publishTime>
     </File>
     <File Include="bin/zh-CHT/Microsoft.ReportViewer.WebDesign.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:27</publishTime>
     </File>
     <File Include="bin/zh-CHT/Microsoft.ReportViewer.WebForms.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:27</publishTime>
     </File>
     <File Include="bin/zh-CHT/Microsoft.ReportViewer.WinForms.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:27</publishTime>
     </File>
     <File Include="bin/zh-HANS/Microsoft.ReportViewer.Common.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:27</publishTime>
     </File>
     <File Include="bin/zh-HANS/Microsoft.ReportViewer.DataVisualization.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:27</publishTime>
     </File>
     <File Include="bin/zh-HANS/Microsoft.ReportViewer.Design.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:27</publishTime>
     </File>
     <File Include="bin/zh-HANS/Microsoft.ReportViewer.WebDesign.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:27</publishTime>
     </File>
     <File Include="bin/zh-HANS/Microsoft.ReportViewer.WebForms.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:27</publishTime>
     </File>
     <File Include="bin/zh-HANS/Microsoft.ReportViewer.WinForms.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:27</publishTime>
     </File>
     <File Include="bin/zh-HANT/Microsoft.ReportViewer.Common.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:27</publishTime>
     </File>
     <File Include="bin/zh-HANT/Microsoft.ReportViewer.DataVisualization.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:27</publishTime>
     </File>
     <File Include="bin/zh-HANT/Microsoft.ReportViewer.Design.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:27</publishTime>
     </File>
     <File Include="bin/zh-HANT/Microsoft.ReportViewer.WebDesign.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:27</publishTime>
     </File>
     <File Include="bin/zh-HANT/Microsoft.ReportViewer.WebForms.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:27</publishTime>
     </File>
     <File Include="bin/zh-HANT/Microsoft.ReportViewer.WinForms.resources.dll">
-      <publishTime>07/07/2017 10:58:52</publishTime>
+      <publishTime>07/07/2017 10:52:27</publishTime>
     </File>
     <File Include="Content/bootstrap.css">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:04</publishTime>
     </File>
     <File Include="Content/bootstrap.min.css">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:04</publishTime>
     </File>
     <File Include="Content/Site.css">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:04</publishTime>
     </File>
     <File Include="DataSets/DSInformes.xsc">
-      <publishTime>07/07/2017 12:05:53</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="DataSets/DSInformes.xss">
-      <publishTime>07/07/2017 12:05:53</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="favicon.ico">
-      <publishTime>07/07/2017 10:58:49</publishTime>
+      <publishTime>07/07/2017 10:52:15</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.eot">
-      <publishTime>07/07/2017 10:58:49</publishTime>
+      <publishTime>07/07/2017 10:52:15</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.svg">
-      <publishTime>07/07/2017 10:58:49</publishTime>
+      <publishTime>07/07/2017 10:52:15</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.ttf">
-      <publishTime>07/07/2017 10:58:49</publishTime>
+      <publishTime>07/07/2017 10:52:16</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.woff">
-      <publishTime>07/07/2017 10:58:49</publishTime>
+      <publishTime>07/07/2017 10:52:16</publishTime>
     </File>
     <File Include="Global.asax">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Models/ModeloDb.edmx.diagram">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>08/22/2017 11:32:50</publishTime>
     </File>
     <File Include="Models/ModeloDb.edmx.sql">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>08/23/2017 13:23:31</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>07/07/2017 10:58:50</publishTime>
+      <publishTime>07/11/2017 11:27:09</publishTime>
     </File>
     <File Include="Reports/Avginstructores.aspx">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Reports/IndicadoresGestion.aspx">
-      <publishTime>07/07/2017 12:08:05</publishTime>
+      <publishTime>07/07/2017 12:52:25</publishTime>
     </File>
     <File Include="Reports/Totales.aspx">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Scripts/bootstrap.min.js">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Scripts/estilo.css">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Scripts/jquery-1.12.4.js">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Scripts/jquery-1.12.4.min.js">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Scripts/jquery-1.12.4.min.map">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Scripts/jquery.validate.js">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Scripts/jquery.validate.min.js">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Scripts/jquery.validate.unobtrusive.js">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Scripts/jquery.validate.unobtrusive.min.js">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Scripts/modernizr-2.6.2.js">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Scripts/myScript.js">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Scripts/respond.js">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Scripts/respond.min.js">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="SqlServerTypes/readme.htm">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="SqlServerTypes/x64/msvcr120.dll">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="SqlServerTypes/x64/SqlServerSpatial140.dll">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="SqlServerTypes/x86/msvcr120.dll">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="SqlServerTypes/x86/SqlServerSpatial140.dll">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Views/Capacitaciones/Create.cshtml">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Views/Capacitaciones/Delete.cshtml">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Views/Capacitaciones/Details.cshtml">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Views/Capacitaciones/Edit.cshtml">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Views/Capacitaciones/Index.cshtml">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Views/Ciudades/Create.cshtml">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Views/Ciudades/Delete.cshtml">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Views/Ciudades/Details.cshtml">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Views/Ciudades/Edit.cshtml">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Views/Ciudades/Index.cshtml">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Views/Cuestionarios/Create.cshtml">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>08/23/2017 13:36:44</publishTime>
     </File>
     <File Include="Views/Cuestionarios/CreateReferido.cshtml">
       <publishTime>06/16/2017 12:00:12</publishTime>
     </File>
     <File Include="Views/Cuestionarios/CuestionarioActual.cshtml">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>08/23/2017 13:42:13</publishTime>
     </File>
     <File Include="Views/Cuestionarios/Delete.cshtml">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>08/23/2017 13:36:46</publishTime>
     </File>
     <File Include="Views/Cuestionarios/Details.cshtml">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>08/23/2017 13:36:48</publishTime>
     </File>
     <File Include="Views/Cuestionarios/Edit.cshtml">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>08/23/2017 13:36:50</publishTime>
     </File>
     <File Include="Views/Cuestionarios/Error.cshtml">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>08/23/2017 13:49:23</publishTime>
     </File>
     <File Include="Views/Cuestionarios/Fin.cshtml">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>08/23/2017 13:49:23</publishTime>
     </File>
     <File Include="Views/Cuestionarios/Finalizado.cshtml">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>08/23/2017 13:49:23</publishTime>
     </File>
     <File Include="Views/Cuestionarios/Index Filter.cshtml">
       <publishTime>07/07/2017 10:58:42</publishTime>
     </File>
     <File Include="Views/Cuestionarios/Index.cshtml">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>08/23/2017 13:36:51</publishTime>
     </File>
     <File Include="Views/Cuestionarios/__Create.cshtml">
       <publishTime>07/07/2017 10:58:42</publishTime>
@@ -722,55 +788,91 @@ edite el archivo MSBuild. Visite https://go.microsoft.com/fwlink/?LinkID=208121 
       <publishTime>07/07/2017 10:58:42</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Views/Instructores/Create.cshtml">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Views/Instructores/Delete.cshtml">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Views/Instructores/Details.cshtml">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Views/Instructores/Edit.cshtml">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Views/Instructores/Index.cshtml">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Views/Referidos/Create.cshtml">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Views/Referidos/Delete.cshtml">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Views/Referidos/Details.cshtml">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Views/Referidos/Edit.cshtml">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Views/Referidos/Index.cshtml">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Views/Shared/EditorTemplates/Collection.cshtml">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Views/Shared/_Layout.cshtml">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>08/24/2017 12:46:10</publishTime>
     </File>
     <File Include="Views/Web.config">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
+    </File>
+    <File Include="Views/_Cuestionarios/Create.cshtml">
+      <publishTime>07/07/2017 10:52:05</publishTime>
+    </File>
+    <File Include="Views/_Cuestionarios/CuestionarioActual.cshtml">
+      <publishTime>07/17/2017 10:44:14</publishTime>
+    </File>
+    <File Include="Views/_Cuestionarios/Delete.cshtml">
+      <publishTime>07/07/2017 10:52:05</publishTime>
+    </File>
+    <File Include="Views/_Cuestionarios/Details.cshtml">
+      <publishTime>07/07/2017 10:52:05</publishTime>
+    </File>
+    <File Include="Views/_Cuestionarios/Edit.cshtml">
+      <publishTime>07/07/2017 10:52:05</publishTime>
+    </File>
+    <File Include="Views/_Cuestionarios/Error.cshtml">
+      <publishTime>07/07/2017 10:52:05</publishTime>
+    </File>
+    <File Include="Views/_Cuestionarios/Fin.cshtml">
+      <publishTime>07/07/2017 10:52:05</publishTime>
+    </File>
+    <File Include="Views/_Cuestionarios/Finalizado.cshtml">
+      <publishTime>07/07/2017 10:52:05</publishTime>
+    </File>
+    <File Include="Views/_Cuestionarios/Index Filter.cshtml">
+      <publishTime>07/07/2017 10:52:05</publishTime>
+    </File>
+    <File Include="Views/_Cuestionarios/Index.cshtml">
+      <publishTime>07/07/2017 10:52:05</publishTime>
+    </File>
+    <File Include="Views/_Cuestionarios/__Create.cshtml">
+      <publishTime>07/07/2017 10:52:05</publishTime>
+    </File>
+    <File Include="Views/_Cuestionarios/__Edit.cshtml">
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Views/_ViewStart.cshtml">
-      <publishTime>07/07/2017 10:58:42</publishTime>
+      <publishTime>07/07/2017 10:52:05</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>07/07/2017 12:43:40</publishTime>
+      <publishTime>08/23/2017 16:08:59</publishTime>
     </File>
   </ItemGroup>
 </Project>

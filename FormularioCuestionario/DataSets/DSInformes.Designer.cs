@@ -30,6 +30,8 @@ namespace FormularioCuestionario.DataSets {
         
         private IndicGestionDataTable tableIndicGestion;
         
+        private sp_reclamos_cantidadDataTable tablesp_reclamos_cantidad;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -66,6 +68,9 @@ namespace FormularioCuestionario.DataSets {
                 }
                 if ((ds.Tables["IndicGestion"] != null)) {
                     base.Tables.Add(new IndicGestionDataTable(ds.Tables["IndicGestion"]));
+                }
+                if ((ds.Tables["sp_reclamos_cantidad"] != null)) {
+                    base.Tables.Add(new sp_reclamos_cantidadDataTable(ds.Tables["sp_reclamos_cantidad"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -112,6 +117,16 @@ namespace FormularioCuestionario.DataSets {
         public IndicGestionDataTable IndicGestion {
             get {
                 return this.tableIndicGestion;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public sp_reclamos_cantidadDataTable sp_reclamos_cantidad {
+            get {
+                return this.tablesp_reclamos_cantidad;
             }
         }
         
@@ -191,6 +206,9 @@ namespace FormularioCuestionario.DataSets {
                 if ((ds.Tables["IndicGestion"] != null)) {
                     base.Tables.Add(new IndicGestionDataTable(ds.Tables["IndicGestion"]));
                 }
+                if ((ds.Tables["sp_reclamos_cantidad"] != null)) {
+                    base.Tables.Add(new sp_reclamos_cantidadDataTable(ds.Tables["sp_reclamos_cantidad"]));
+                }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
                 this.Namespace = ds.Namespace;
@@ -242,6 +260,12 @@ namespace FormularioCuestionario.DataSets {
                     this.tableIndicGestion.InitVars();
                 }
             }
+            this.tablesp_reclamos_cantidad = ((sp_reclamos_cantidadDataTable)(base.Tables["sp_reclamos_cantidad"]));
+            if ((initTable == true)) {
+                if ((this.tablesp_reclamos_cantidad != null)) {
+                    this.tablesp_reclamos_cantidad.InitVars();
+                }
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -258,6 +282,8 @@ namespace FormularioCuestionario.DataSets {
             base.Tables.Add(this.tablesp_avg_instructores);
             this.tableIndicGestion = new IndicGestionDataTable();
             base.Tables.Add(this.tableIndicGestion);
+            this.tablesp_reclamos_cantidad = new sp_reclamos_cantidadDataTable();
+            base.Tables.Add(this.tablesp_reclamos_cantidad);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -275,6 +301,12 @@ namespace FormularioCuestionario.DataSets {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private bool ShouldSerializeIndicGestion() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private bool ShouldSerializesp_reclamos_cantidad() {
             return false;
         }
         
@@ -341,6 +373,9 @@ namespace FormularioCuestionario.DataSets {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void IndicGestionRowChangeEventHandler(object sender, IndicGestionRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void sp_reclamos_cantidadRowChangeEventHandler(object sender, sp_reclamos_cantidadRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -1238,6 +1273,530 @@ namespace FormularioCuestionario.DataSets {
         }
         
         /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class sp_reclamos_cantidadDataTable : global::System.Data.TypedTableBase<sp_reclamos_cantidadRow> {
+            
+            private global::System.Data.DataColumn columnMes;
+            
+            private global::System.Data.DataColumn columnNombreciudad;
+            
+            private global::System.Data.DataColumn columnNombreInstructor;
+            
+            private global::System.Data.DataColumn columnAsesoramientoInscripcion;
+            
+            private global::System.Data.DataColumn columnSalónEquipamiento;
+            
+            private global::System.Data.DataColumn columnContenidos;
+            
+            private global::System.Data.DataColumn columnMetodologia;
+            
+            private global::System.Data.DataColumn columnMaterial;
+            
+            private global::System.Data.DataColumn columnDuración;
+            
+            private global::System.Data.DataColumn columnIstructorConocimiento;
+            
+            private global::System.Data.DataColumn columnInstructorClaridad;
+            
+            private global::System.Data.DataColumn columnPredisposicion;
+            
+            private global::System.Data.DataColumn columnEjercicios;
+            
+            private global::System.Data.DataColumn columnInstructorTrato;
+            
+            private global::System.Data.DataColumn columnTratoAdministrativo;
+            
+            private global::System.Data.DataColumn columnConocimientoAdquirido;
+            
+            private global::System.Data.DataColumn columnUtilidad;
+            
+            private global::System.Data.DataColumn columnSatisfacciónGral;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public sp_reclamos_cantidadDataTable() {
+                this.TableName = "sp_reclamos_cantidad";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal sp_reclamos_cantidadDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected sp_reclamos_cantidadDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn MesColumn {
+                get {
+                    return this.columnMes;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn NombreciudadColumn {
+                get {
+                    return this.columnNombreciudad;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn NombreInstructorColumn {
+                get {
+                    return this.columnNombreInstructor;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn AsesoramientoInscripcionColumn {
+                get {
+                    return this.columnAsesoramientoInscripcion;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn SalónEquipamientoColumn {
+                get {
+                    return this.columnSalónEquipamiento;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ContenidosColumn {
+                get {
+                    return this.columnContenidos;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn MetodologiaColumn {
+                get {
+                    return this.columnMetodologia;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn MaterialColumn {
+                get {
+                    return this.columnMaterial;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DuraciónColumn {
+                get {
+                    return this.columnDuración;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn IstructorConocimientoColumn {
+                get {
+                    return this.columnIstructorConocimiento;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn InstructorClaridadColumn {
+                get {
+                    return this.columnInstructorClaridad;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PredisposicionColumn {
+                get {
+                    return this.columnPredisposicion;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn EjerciciosColumn {
+                get {
+                    return this.columnEjercicios;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn InstructorTratoColumn {
+                get {
+                    return this.columnInstructorTrato;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn TratoAdministrativoColumn {
+                get {
+                    return this.columnTratoAdministrativo;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ConocimientoAdquiridoColumn {
+                get {
+                    return this.columnConocimientoAdquirido;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn UtilidadColumn {
+                get {
+                    return this.columnUtilidad;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn SatisfacciónGralColumn {
+                get {
+                    return this.columnSatisfacciónGral;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public sp_reclamos_cantidadRow this[int index] {
+                get {
+                    return ((sp_reclamos_cantidadRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event sp_reclamos_cantidadRowChangeEventHandler sp_reclamos_cantidadRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event sp_reclamos_cantidadRowChangeEventHandler sp_reclamos_cantidadRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event sp_reclamos_cantidadRowChangeEventHandler sp_reclamos_cantidadRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event sp_reclamos_cantidadRowChangeEventHandler sp_reclamos_cantidadRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void Addsp_reclamos_cantidadRow(sp_reclamos_cantidadRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public sp_reclamos_cantidadRow Addsp_reclamos_cantidadRow(
+                        string Mes, 
+                        string Nombreciudad, 
+                        string NombreInstructor, 
+                        int AsesoramientoInscripcion, 
+                        int SalónEquipamiento, 
+                        int Contenidos, 
+                        int Metodologia, 
+                        int Material, 
+                        int Duración, 
+                        int IstructorConocimiento, 
+                        int InstructorClaridad, 
+                        int Predisposicion, 
+                        int Ejercicios, 
+                        int InstructorTrato, 
+                        int TratoAdministrativo, 
+                        int ConocimientoAdquirido, 
+                        int Utilidad, 
+                        int SatisfacciónGral) {
+                sp_reclamos_cantidadRow rowsp_reclamos_cantidadRow = ((sp_reclamos_cantidadRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        Mes,
+                        Nombreciudad,
+                        NombreInstructor,
+                        AsesoramientoInscripcion,
+                        SalónEquipamiento,
+                        Contenidos,
+                        Metodologia,
+                        Material,
+                        Duración,
+                        IstructorConocimiento,
+                        InstructorClaridad,
+                        Predisposicion,
+                        Ejercicios,
+                        InstructorTrato,
+                        TratoAdministrativo,
+                        ConocimientoAdquirido,
+                        Utilidad,
+                        SatisfacciónGral};
+                rowsp_reclamos_cantidadRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowsp_reclamos_cantidadRow);
+                return rowsp_reclamos_cantidadRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                sp_reclamos_cantidadDataTable cln = ((sp_reclamos_cantidadDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new sp_reclamos_cantidadDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+                this.columnMes = base.Columns["Mes"];
+                this.columnNombreciudad = base.Columns["Nombreciudad"];
+                this.columnNombreInstructor = base.Columns["NombreInstructor"];
+                this.columnAsesoramientoInscripcion = base.Columns["AsesoramientoInscripcion"];
+                this.columnSalónEquipamiento = base.Columns["SalónEquipamiento"];
+                this.columnContenidos = base.Columns["Contenidos"];
+                this.columnMetodologia = base.Columns["Metodologia"];
+                this.columnMaterial = base.Columns["Material"];
+                this.columnDuración = base.Columns["Duración"];
+                this.columnIstructorConocimiento = base.Columns["IstructorConocimiento"];
+                this.columnInstructorClaridad = base.Columns["InstructorClaridad"];
+                this.columnPredisposicion = base.Columns["Predisposicion"];
+                this.columnEjercicios = base.Columns["Ejercicios"];
+                this.columnInstructorTrato = base.Columns["InstructorTrato"];
+                this.columnTratoAdministrativo = base.Columns["TratoAdministrativo"];
+                this.columnConocimientoAdquirido = base.Columns["ConocimientoAdquirido"];
+                this.columnUtilidad = base.Columns["Utilidad"];
+                this.columnSatisfacciónGral = base.Columns["SatisfacciónGral"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+                this.columnMes = new global::System.Data.DataColumn("Mes", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMes);
+                this.columnNombreciudad = new global::System.Data.DataColumn("Nombreciudad", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNombreciudad);
+                this.columnNombreInstructor = new global::System.Data.DataColumn("NombreInstructor", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNombreInstructor);
+                this.columnAsesoramientoInscripcion = new global::System.Data.DataColumn("AsesoramientoInscripcion", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAsesoramientoInscripcion);
+                this.columnSalónEquipamiento = new global::System.Data.DataColumn("SalónEquipamiento", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSalónEquipamiento);
+                this.columnContenidos = new global::System.Data.DataColumn("Contenidos", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnContenidos);
+                this.columnMetodologia = new global::System.Data.DataColumn("Metodologia", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMetodologia);
+                this.columnMaterial = new global::System.Data.DataColumn("Material", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMaterial);
+                this.columnDuración = new global::System.Data.DataColumn("Duración", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDuración);
+                this.columnIstructorConocimiento = new global::System.Data.DataColumn("IstructorConocimiento", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIstructorConocimiento);
+                this.columnInstructorClaridad = new global::System.Data.DataColumn("InstructorClaridad", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnInstructorClaridad);
+                this.columnPredisposicion = new global::System.Data.DataColumn("Predisposicion", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPredisposicion);
+                this.columnEjercicios = new global::System.Data.DataColumn("Ejercicios", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEjercicios);
+                this.columnInstructorTrato = new global::System.Data.DataColumn("InstructorTrato", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnInstructorTrato);
+                this.columnTratoAdministrativo = new global::System.Data.DataColumn("TratoAdministrativo", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTratoAdministrativo);
+                this.columnConocimientoAdquirido = new global::System.Data.DataColumn("ConocimientoAdquirido", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnConocimientoAdquirido);
+                this.columnUtilidad = new global::System.Data.DataColumn("Utilidad", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnUtilidad);
+                this.columnSatisfacciónGral = new global::System.Data.DataColumn("SatisfacciónGral", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSatisfacciónGral);
+                this.columnMes.ReadOnly = true;
+                this.columnMes.MaxLength = 10;
+                this.columnNombreciudad.AllowDBNull = false;
+                this.columnNombreciudad.MaxLength = 2147483647;
+                this.columnNombreInstructor.ReadOnly = true;
+                this.columnNombreInstructor.MaxLength = 2147483647;
+                this.columnAsesoramientoInscripcion.ReadOnly = true;
+                this.columnSalónEquipamiento.ReadOnly = true;
+                this.columnContenidos.ReadOnly = true;
+                this.columnMetodologia.ReadOnly = true;
+                this.columnMaterial.ReadOnly = true;
+                this.columnDuración.ReadOnly = true;
+                this.columnIstructorConocimiento.ReadOnly = true;
+                this.columnInstructorClaridad.ReadOnly = true;
+                this.columnPredisposicion.ReadOnly = true;
+                this.columnEjercicios.ReadOnly = true;
+                this.columnInstructorTrato.ReadOnly = true;
+                this.columnTratoAdministrativo.ReadOnly = true;
+                this.columnConocimientoAdquirido.ReadOnly = true;
+                this.columnUtilidad.ReadOnly = true;
+                this.columnSatisfacciónGral.ReadOnly = true;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public sp_reclamos_cantidadRow Newsp_reclamos_cantidadRow() {
+                return ((sp_reclamos_cantidadRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new sp_reclamos_cantidadRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(sp_reclamos_cantidadRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.sp_reclamos_cantidadRowChanged != null)) {
+                    this.sp_reclamos_cantidadRowChanged(this, new sp_reclamos_cantidadRowChangeEvent(((sp_reclamos_cantidadRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.sp_reclamos_cantidadRowChanging != null)) {
+                    this.sp_reclamos_cantidadRowChanging(this, new sp_reclamos_cantidadRowChangeEvent(((sp_reclamos_cantidadRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.sp_reclamos_cantidadRowDeleted != null)) {
+                    this.sp_reclamos_cantidadRowDeleted(this, new sp_reclamos_cantidadRowChangeEvent(((sp_reclamos_cantidadRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.sp_reclamos_cantidadRowDeleting != null)) {
+                    this.sp_reclamos_cantidadRowDeleting(this, new sp_reclamos_cantidadRowChangeEvent(((sp_reclamos_cantidadRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void Removesp_reclamos_cantidadRow(sp_reclamos_cantidadRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                DataSet1 ds = new DataSet1();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "sp_reclamos_cantidadDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class p_totalRow : global::System.Data.DataRow {
@@ -1654,6 +2213,521 @@ namespace FormularioCuestionario.DataSets {
         }
         
         /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class sp_reclamos_cantidadRow : global::System.Data.DataRow {
+            
+            private sp_reclamos_cantidadDataTable tablesp_reclamos_cantidad;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal sp_reclamos_cantidadRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tablesp_reclamos_cantidad = ((sp_reclamos_cantidadDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Mes {
+                get {
+                    try {
+                        return ((string)(this[this.tablesp_reclamos_cantidad.MesColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Mes\' de la tabla \'sp_reclamos_cantidad\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablesp_reclamos_cantidad.MesColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Nombreciudad {
+                get {
+                    return ((string)(this[this.tablesp_reclamos_cantidad.NombreciudadColumn]));
+                }
+                set {
+                    this[this.tablesp_reclamos_cantidad.NombreciudadColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string NombreInstructor {
+                get {
+                    try {
+                        return ((string)(this[this.tablesp_reclamos_cantidad.NombreInstructorColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'NombreInstructor\' de la tabla \'sp_reclamos_cantidad\' es D" +
+                                "BNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablesp_reclamos_cantidad.NombreInstructorColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int AsesoramientoInscripcion {
+                get {
+                    try {
+                        return ((int)(this[this.tablesp_reclamos_cantidad.AsesoramientoInscripcionColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'AsesoramientoInscripcion\' de la tabla \'sp_reclamos_cantid" +
+                                "ad\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablesp_reclamos_cantidad.AsesoramientoInscripcionColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int SalónEquipamiento {
+                get {
+                    try {
+                        return ((int)(this[this.tablesp_reclamos_cantidad.SalónEquipamientoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'SalónEquipamiento\' de la tabla \'sp_reclamos_cantidad\' es " +
+                                "DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablesp_reclamos_cantidad.SalónEquipamientoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int Contenidos {
+                get {
+                    try {
+                        return ((int)(this[this.tablesp_reclamos_cantidad.ContenidosColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Contenidos\' de la tabla \'sp_reclamos_cantidad\' es DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tablesp_reclamos_cantidad.ContenidosColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int Metodologia {
+                get {
+                    try {
+                        return ((int)(this[this.tablesp_reclamos_cantidad.MetodologiaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Metodologia\' de la tabla \'sp_reclamos_cantidad\' es DBNull" +
+                                ".", e);
+                    }
+                }
+                set {
+                    this[this.tablesp_reclamos_cantidad.MetodologiaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int Material {
+                get {
+                    try {
+                        return ((int)(this[this.tablesp_reclamos_cantidad.MaterialColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Material\' de la tabla \'sp_reclamos_cantidad\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablesp_reclamos_cantidad.MaterialColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int Duración {
+                get {
+                    try {
+                        return ((int)(this[this.tablesp_reclamos_cantidad.DuraciónColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Duración\' de la tabla \'sp_reclamos_cantidad\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablesp_reclamos_cantidad.DuraciónColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int IstructorConocimiento {
+                get {
+                    try {
+                        return ((int)(this[this.tablesp_reclamos_cantidad.IstructorConocimientoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'IstructorConocimiento\' de la tabla \'sp_reclamos_cantidad\'" +
+                                " es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablesp_reclamos_cantidad.IstructorConocimientoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int InstructorClaridad {
+                get {
+                    try {
+                        return ((int)(this[this.tablesp_reclamos_cantidad.InstructorClaridadColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'InstructorClaridad\' de la tabla \'sp_reclamos_cantidad\' es" +
+                                " DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablesp_reclamos_cantidad.InstructorClaridadColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int Predisposicion {
+                get {
+                    try {
+                        return ((int)(this[this.tablesp_reclamos_cantidad.PredisposicionColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Predisposicion\' de la tabla \'sp_reclamos_cantidad\' es DBN" +
+                                "ull.", e);
+                    }
+                }
+                set {
+                    this[this.tablesp_reclamos_cantidad.PredisposicionColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int Ejercicios {
+                get {
+                    try {
+                        return ((int)(this[this.tablesp_reclamos_cantidad.EjerciciosColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Ejercicios\' de la tabla \'sp_reclamos_cantidad\' es DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tablesp_reclamos_cantidad.EjerciciosColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int InstructorTrato {
+                get {
+                    try {
+                        return ((int)(this[this.tablesp_reclamos_cantidad.InstructorTratoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'InstructorTrato\' de la tabla \'sp_reclamos_cantidad\' es DB" +
+                                "Null.", e);
+                    }
+                }
+                set {
+                    this[this.tablesp_reclamos_cantidad.InstructorTratoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int TratoAdministrativo {
+                get {
+                    try {
+                        return ((int)(this[this.tablesp_reclamos_cantidad.TratoAdministrativoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'TratoAdministrativo\' de la tabla \'sp_reclamos_cantidad\' e" +
+                                "s DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablesp_reclamos_cantidad.TratoAdministrativoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int ConocimientoAdquirido {
+                get {
+                    try {
+                        return ((int)(this[this.tablesp_reclamos_cantidad.ConocimientoAdquiridoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'ConocimientoAdquirido\' de la tabla \'sp_reclamos_cantidad\'" +
+                                " es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablesp_reclamos_cantidad.ConocimientoAdquiridoColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int Utilidad {
+                get {
+                    try {
+                        return ((int)(this[this.tablesp_reclamos_cantidad.UtilidadColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'Utilidad\' de la tabla \'sp_reclamos_cantidad\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablesp_reclamos_cantidad.UtilidadColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int SatisfacciónGral {
+                get {
+                    try {
+                        return ((int)(this[this.tablesp_reclamos_cantidad.SatisfacciónGralColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'SatisfacciónGral\' de la tabla \'sp_reclamos_cantidad\' es D" +
+                                "BNull.", e);
+                    }
+                }
+                set {
+                    this[this.tablesp_reclamos_cantidad.SatisfacciónGralColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsMesNull() {
+                return this.IsNull(this.tablesp_reclamos_cantidad.MesColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetMesNull() {
+                this[this.tablesp_reclamos_cantidad.MesColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsNombreInstructorNull() {
+                return this.IsNull(this.tablesp_reclamos_cantidad.NombreInstructorColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetNombreInstructorNull() {
+                this[this.tablesp_reclamos_cantidad.NombreInstructorColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsAsesoramientoInscripcionNull() {
+                return this.IsNull(this.tablesp_reclamos_cantidad.AsesoramientoInscripcionColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetAsesoramientoInscripcionNull() {
+                this[this.tablesp_reclamos_cantidad.AsesoramientoInscripcionColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsSalónEquipamientoNull() {
+                return this.IsNull(this.tablesp_reclamos_cantidad.SalónEquipamientoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetSalónEquipamientoNull() {
+                this[this.tablesp_reclamos_cantidad.SalónEquipamientoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsContenidosNull() {
+                return this.IsNull(this.tablesp_reclamos_cantidad.ContenidosColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetContenidosNull() {
+                this[this.tablesp_reclamos_cantidad.ContenidosColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsMetodologiaNull() {
+                return this.IsNull(this.tablesp_reclamos_cantidad.MetodologiaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetMetodologiaNull() {
+                this[this.tablesp_reclamos_cantidad.MetodologiaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsMaterialNull() {
+                return this.IsNull(this.tablesp_reclamos_cantidad.MaterialColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetMaterialNull() {
+                this[this.tablesp_reclamos_cantidad.MaterialColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsDuraciónNull() {
+                return this.IsNull(this.tablesp_reclamos_cantidad.DuraciónColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetDuraciónNull() {
+                this[this.tablesp_reclamos_cantidad.DuraciónColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsIstructorConocimientoNull() {
+                return this.IsNull(this.tablesp_reclamos_cantidad.IstructorConocimientoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetIstructorConocimientoNull() {
+                this[this.tablesp_reclamos_cantidad.IstructorConocimientoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsInstructorClaridadNull() {
+                return this.IsNull(this.tablesp_reclamos_cantidad.InstructorClaridadColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetInstructorClaridadNull() {
+                this[this.tablesp_reclamos_cantidad.InstructorClaridadColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPredisposicionNull() {
+                return this.IsNull(this.tablesp_reclamos_cantidad.PredisposicionColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPredisposicionNull() {
+                this[this.tablesp_reclamos_cantidad.PredisposicionColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsEjerciciosNull() {
+                return this.IsNull(this.tablesp_reclamos_cantidad.EjerciciosColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetEjerciciosNull() {
+                this[this.tablesp_reclamos_cantidad.EjerciciosColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsInstructorTratoNull() {
+                return this.IsNull(this.tablesp_reclamos_cantidad.InstructorTratoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetInstructorTratoNull() {
+                this[this.tablesp_reclamos_cantidad.InstructorTratoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsTratoAdministrativoNull() {
+                return this.IsNull(this.tablesp_reclamos_cantidad.TratoAdministrativoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetTratoAdministrativoNull() {
+                this[this.tablesp_reclamos_cantidad.TratoAdministrativoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsConocimientoAdquiridoNull() {
+                return this.IsNull(this.tablesp_reclamos_cantidad.ConocimientoAdquiridoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetConocimientoAdquiridoNull() {
+                this[this.tablesp_reclamos_cantidad.ConocimientoAdquiridoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsUtilidadNull() {
+                return this.IsNull(this.tablesp_reclamos_cantidad.UtilidadColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetUtilidadNull() {
+                this[this.tablesp_reclamos_cantidad.UtilidadColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsSatisfacciónGralNull() {
+                return this.IsNull(this.tablesp_reclamos_cantidad.SatisfacciónGralColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetSatisfacciónGralNull() {
+                this[this.tablesp_reclamos_cantidad.SatisfacciónGralColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -1741,6 +2815,40 @@ namespace FormularioCuestionario.DataSets {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public IndicGestionRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public class sp_reclamos_cantidadRowChangeEvent : global::System.EventArgs {
+            
+            private sp_reclamos_cantidadRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public sp_reclamos_cantidadRowChangeEvent(sp_reclamos_cantidadRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public sp_reclamos_cantidadRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -2268,6 +3376,191 @@ namespace FormularioCuestionario.DataSets.DataSet1TableAdapters {
         public virtual DataSet1.IndicGestionDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             DataSet1.IndicGestionDataTable dataTable = new DataSet1.IndicGestionDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class sp_reclamos_cantidadTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public sp_reclamos_cantidadTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "sp_reclamos_cantidad";
+            tableMapping.ColumnMappings.Add("Mes", "Mes");
+            tableMapping.ColumnMappings.Add("Nombreciudad", "Nombreciudad");
+            tableMapping.ColumnMappings.Add("NombreInstructor", "NombreInstructor");
+            tableMapping.ColumnMappings.Add("AsesoramientoInscripcion", "AsesoramientoInscripcion");
+            tableMapping.ColumnMappings.Add("SalónEquipamiento", "SalónEquipamiento");
+            tableMapping.ColumnMappings.Add("Contenidos", "Contenidos");
+            tableMapping.ColumnMappings.Add("Metodologia", "Metodologia");
+            tableMapping.ColumnMappings.Add("Material", "Material");
+            tableMapping.ColumnMappings.Add("Duración", "Duración");
+            tableMapping.ColumnMappings.Add("IstructorConocimiento", "IstructorConocimiento");
+            tableMapping.ColumnMappings.Add("InstructorClaridad", "InstructorClaridad");
+            tableMapping.ColumnMappings.Add("Predisposicion", "Predisposicion");
+            tableMapping.ColumnMappings.Add("Ejercicios", "Ejercicios");
+            tableMapping.ColumnMappings.Add("InstructorTrato", "InstructorTrato");
+            tableMapping.ColumnMappings.Add("TratoAdministrativo", "TratoAdministrativo");
+            tableMapping.ColumnMappings.Add("ConocimientoAdquirido", "ConocimientoAdquirido");
+            tableMapping.ColumnMappings.Add("Utilidad", "Utilidad");
+            tableMapping.ColumnMappings.Add("SatisfacciónGral", "SatisfacciónGral");
+            this._adapter.TableMappings.Add(tableMapping);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["CuestionariosConnectionString"].ConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "dbo.sp_reclamos_cantidad";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.StoredProcedure;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@RETURN_VALUE", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.ReturnValue, 10, 0, null, global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(DataSet1.sp_reclamos_cantidadDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual DataSet1.sp_reclamos_cantidadDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            DataSet1.sp_reclamos_cantidadDataTable dataTable = new DataSet1.sp_reclamos_cantidadDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }

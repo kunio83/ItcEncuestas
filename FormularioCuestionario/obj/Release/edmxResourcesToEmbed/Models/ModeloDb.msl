@@ -50,6 +50,8 @@
           <ScalarProperty Name="Sugerencias" ColumnName="Sugerencias" />
           <ScalarProperty Name="FechaHora" ColumnName="FechaHora" />
           <ScalarProperty Name="Finalizado" ColumnName="Finalizado" />
+          <ScalarProperty Name="Edad" ColumnName="Edad" />
+          <ScalarProperty Name="Ocupacion" ColumnName="Ocupacion" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

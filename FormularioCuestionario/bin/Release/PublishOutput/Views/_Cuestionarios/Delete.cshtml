@@ -1,0 +1,224 @@
+﻿@model FormularioCuestionario.Models.Cuestionarios
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Cuestionarios</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Apellido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Apellido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DNI)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DNI)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EMail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EMail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Teléfono)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Teléfono)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AsesoramientoInscripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AsesoramientoInscripcion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SalónEquipamiento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SalónEquipamiento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Contenidos)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Contenidos)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IstructorConocimiento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IstructorConocimiento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InstructorClaridad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InstructorClaridad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.InstructorTrato)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.InstructorTrato)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ConocimientoAdquirido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ConocimientoAdquirido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Utilidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Utilidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SatisfacciónGral)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SatisfacciónGral)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HariaOtro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HariaOtro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cual)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cual)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Metodologia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Metodologia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Material)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Material)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Duración)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Duración)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Predisposicion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Predisposicion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ejercicios)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ejercicios)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TratoAdministrativo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TratoAdministrativo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sugerencias)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sugerencias)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Capacitaciones.Descripción)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Capacitaciones.Descripción)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ciudades.NombreCiudad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ciudades.NombreCiudad)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

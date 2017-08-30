@@ -11,7 +11,8 @@ namespace FormularioCuestionario.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Cuestionarios
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -22,34 +23,75 @@ namespace FormularioCuestionario.Models
         }
     
         public int IdCuestionario { get; set; }
+        [Required]
         public string Nombre { get; set; }
         public string Apellido { get; set; }
+        [Required]
+        [Range(10000, 99999999999,ErrorMessage = "Error en el número de documento")]
         public int DNI { get; set; }
+        [Required]
         public int Ciudad { get; set; }
+        [Required]
         public int Capacitación { get; set; }
+        [Required(ErrorMessage = "El email es requerido")]
+        [EmailAddress(ErrorMessage = "Email Invalido")]
         public string EMail { get; set; }
         public string Teléfono { get; set; }
+        [Required]
+        [Range(1, 10)]
         public int AsesoramientoInscripcion { get; set; }
+        [Required]
+        [Range(1, 10)]
         public int SalónEquipamiento { get; set; }
+        [Required]
+        [Range(1, 10)]
         public int Contenidos { get; set; }
+        [Required]
+        [Range(1, 10)]
         public int IstructorConocimiento { get; set; }
+        [Required]
+        [Range(1, 10)]
         public int InstructorClaridad { get; set; }
+        [Required]
+        [Range(1, 10)]
         public int InstructorTrato { get; set; }
+        [Required]
+        [Range(1, 10)]
         public int ConocimientoAdquirido { get; set; }
+        [Required]
+        [Range(1, 10)]
         public int Utilidad { get; set; }
+        [Required]
+        [Range(1, 10)]
         public int SatisfacciónGral { get; set; }
         public bool HariaOtro { get; set; }
         public string Cual { get; set; }
+        [Required]
+        [Range(1, 10)]
         public int Metodologia { get; set; }
+        [Required]
+        [Range(1, 10)]
         public int Material { get; set; }
+        [Required]
+        [Range(1, 10)]
         public int Duración { get; set; }
+        [Required]
+        [Range(1, 10)]
         public int Predisposicion { get; set; }
+        [Required]
+        [Range(1, 10)]
         public int Ejercicios { get; set; }
+        [Required]
+        [Range(1, 10)]
         public int TratoAdministrativo { get; set; }
         public string Sugerencias { get; set; }
         public System.DateTime FechaHora { get; set; }
         public bool Finalizado { get; set; }
+        [Required]
+        [Range(1, 100)]
         public int Edad { get; set; }
+        [Required]
+        public string Ocupacion { get; set; }
     
         public virtual Capacitaciones Capacitaciones { get; set; }
         public virtual Ciudades Ciudades { get; set; }
