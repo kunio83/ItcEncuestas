@@ -43,7 +43,7 @@ namespace FormularioCuestionario.Controllers
                 return View("Error");
             }
             //Si ya fue realizado tiro error
-            if (cuestionarios.Finalizado)
+            if (cuestionarios.Finalizado)//ahora
             {
                 return View("Finalizado");
             }
