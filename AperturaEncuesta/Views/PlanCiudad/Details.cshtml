@@ -1,0 +1,74 @@
+﻿@model AperturaEncuesta.Models.PlanCiudad
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PlanCiudad</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IdCiudad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdCiudad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdPlan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdPlan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MatriculaValor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MatriculaValor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CuotaCantidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CuotaCantidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CuotaValor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CuotaValor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CuotaValorDescuento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CuotaValorDescuento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CertificadoValor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CertificadoValor)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdPlanCiudad }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

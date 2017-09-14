@@ -1,0 +1,34 @@
+﻿@model AperturaEncuesta.Models.EncuestaApertura
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>EncuestaApertura</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.EncuestaAsesoramiento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EncuestaAsesoramiento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EncuestaSugerencia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EncuestaSugerencia)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdEncuestaApertura }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,69 @@
+﻿@model IEnumerable<AperturaEncuesta.Models.PlanCiudad>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IdCiudad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IdPlan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MatriculaValor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CuotaCantidad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CuotaValor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CuotaValorDescuento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CertificadoValor)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdCiudad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IdPlan)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MatriculaValor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CuotaCantidad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CuotaValor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CuotaValorDescuento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CertificadoValor)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IdPlanCiudad }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IdPlanCiudad }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IdPlanCiudad })
+        </td>
+    </tr>
+}
+
+</table>

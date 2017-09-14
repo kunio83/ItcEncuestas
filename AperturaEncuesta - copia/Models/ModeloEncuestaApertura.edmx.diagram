@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c12ef15780ca41d7bfa4512362f36f9b" Name="Diagram1" >
+        <EntityTypeShape EntityType="ModeloEncuestaApertura.Capacitacion" Width="1.5" PointX="1.75" PointY="1.25" />
+        <EntityTypeShape EntityType="ModeloEncuestaApertura.Ciudad" Width="1.5" PointX="10.375" PointY="3" />
+        <EntityTypeShape EntityType="ModeloEncuestaApertura.Plan" Width="1.5" PointX="10.375" PointY="1" />
+        <EntityTypeShape EntityType="ModeloEncuestaApertura.PlanCiudad" Width="1.5" PointX="7.375" PointY="1.75" />
+        <AssociationConnector Association="ModeloEncuestaApertura.CiudadPlanCiudad" />
+        <AssociationConnector Association="ModeloEncuestaApertura.PlanPlanCiudad" />
+        <EntityTypeShape EntityType="ModeloEncuestaApertura.Padron" Width="1.875" PointX="1.375" PointY="4.25" />
+        <AssociationConnector Association="ModeloEncuestaApertura.CapacitacionPadron" />
+        <AssociationConnector Association="ModeloEncuestaApertura.PadronPlanCiudad" />
+        <EntityTypeShape EntityType="ModeloEncuestaApertura.EncuestaApertura" Width="1.875" PointX="4.125" PointY="5.875" />
+        <AssociationConnector Association="ModeloEncuestaApertura.PadronEncuestaApertura" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

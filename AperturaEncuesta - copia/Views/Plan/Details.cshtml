@@ -1,0 +1,26 @@
+﻿@model EncuestaApertura.Models.Plan
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Plan</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PlanDescripcion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PlanDescripcion)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdPlan }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

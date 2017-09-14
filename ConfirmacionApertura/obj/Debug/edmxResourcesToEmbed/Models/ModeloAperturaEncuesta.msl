@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EncuestaAperturaModelStoreContainer" CdmEntityContainer="EncuestaAperturaEntities">
+    <EntitySetMapping Name="Capacitacion">
+      <EntityTypeMapping TypeName="IsTypeOf(EncuestaAperturaModel.Capacitacion)">
+        <MappingFragment StoreEntitySet="Capacitacion">
+          <ScalarProperty Name="IdCapacitacion" ColumnName="IdCapacitacion" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="Contenido" ColumnName="Contenido" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ciudad">
+      <EntityTypeMapping TypeName="IsTypeOf(EncuestaAperturaModel.Ciudad)">
+        <MappingFragment StoreEntitySet="Ciudad">
+          <ScalarProperty Name="IdCiudad" ColumnName="IdCiudad" />
+          <ScalarProperty Name="NombreCiudad" ColumnName="NombreCiudad" />
+          <ScalarProperty Name="HorasDuracion" ColumnName="HorasDuracion" />
+          <ScalarProperty Name="Jornadas" ColumnName="Jornadas" />
+          <ScalarProperty Name="FrecuenciaSemanal" ColumnName="FrecuenciaSemanal" />
+          <ScalarProperty Name="SalonDireccion" ColumnName="SalonDireccion" />
+          <ScalarProperty Name="FechaInicio" ColumnName="FechaInicio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EncuestaApertura">
+      <EntityTypeMapping TypeName="IsTypeOf(EncuestaAperturaModel.EncuestaApertura)">
+        <MappingFragment StoreEntitySet="EncuestaApertura">
+          <ScalarProperty Name="IdEncuestaApertura" ColumnName="IdEncuestaApertura" />
+          <ScalarProperty Name="EncuestaAsesoramiento" ColumnName="EncuestaAsesoramiento" />
+          <ScalarProperty Name="EncuestaSugerencia" ColumnName="EncuestaSugerencia" />
+          <ScalarProperty Name="Finalizado" ColumnName="Finalizado" />
+          <ScalarProperty Name="FechaHora" ColumnName="FechaHora" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Padron">
+      <EntityTypeMapping TypeName="IsTypeOf(EncuestaAperturaModel.Padron)">
+        <MappingFragment StoreEntitySet="Padron">
+          <ScalarProperty Name="IdPadron" ColumnName="IdPadron" />
+          <ScalarProperty Name="AlumnoNombre" ColumnName="AlumnoNombre" />
+          <ScalarProperty Name="AlumnoDNI" ColumnName="AlumnoDNI" />
+          <ScalarProperty Name="AlumnoMail" ColumnName="AlumnoMail" />
+          <ScalarProperty Name="AlumnoCel" ColumnName="AlumnoCel" />
+          <ScalarProperty Name="AlumnoHora" ColumnName="AlumnoHora" />
+          <ScalarProperty Name="AlumnoDia" ColumnName="AlumnoDia" />
+          <ScalarProperty Name="IdCapacitacion" ColumnName="IdCapacitacion" />
+          <ScalarProperty Name="IdPlanCiudad" ColumnName="IdPlanCiudad" />
+          <ScalarProperty Name="AlumnoEdad" ColumnName="AlumnoEdad" />
+          <ScalarProperty Name="AlumnoDomicilio" ColumnName="AlumnoDomicilio" />
+          <ScalarProperty Name="AlumnoTel" ColumnName="AlumnoTel" />
+          <ScalarProperty Name="AlumnoBarrio" ColumnName="AlumnoBarrio" />
+          <ScalarProperty Name="IdEncuestaApertura" ColumnName="IdEncuestaApertura" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Plan">
+      <EntityTypeMapping TypeName="IsTypeOf(EncuestaAperturaModel.Plan)">
+        <MappingFragment StoreEntitySet="Plan">
+          <ScalarProperty Name="IdPlan" ColumnName="IdPlan" />
+          <ScalarProperty Name="PlanDescripcion" ColumnName="PlanDescripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PlanCiudad">
+      <EntityTypeMapping TypeName="IsTypeOf(EncuestaAperturaModel.PlanCiudad)">
+        <MappingFragment StoreEntitySet="PlanCiudad">
+          <ScalarProperty Name="IdPlanCiudad" ColumnName="IdPlanCiudad" />
+          <ScalarProperty Name="IdCiudad" ColumnName="IdCiudad" />
+          <ScalarProperty Name="IdPlan" ColumnName="IdPlan" />
+          <ScalarProperty Name="MatriculaValor" ColumnName="MatriculaValor" />
+          <ScalarProperty Name="CuotaCantidad" ColumnName="CuotaCantidad" />
+          <ScalarProperty Name="CuotaValor" ColumnName="CuotaValor" />
+          <ScalarProperty Name="CuotaValorDescuento" ColumnName="CuotaValorDescuento" />
+          <ScalarProperty Name="CertificadoValor" ColumnName="CertificadoValor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

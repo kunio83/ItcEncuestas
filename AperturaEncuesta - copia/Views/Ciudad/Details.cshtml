@@ -1,0 +1,66 @@
+﻿@model EncuestaApertura.Models.Ciudad
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Ciudad</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NombreCiudad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NombreCiudad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.HorasDuracion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HorasDuracion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Jornadas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Jornadas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FrecuenciaSemanal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FrecuenciaSemanal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SalonDireccion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SalonDireccion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FechaInicio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FechaInicio)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdCiudad }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

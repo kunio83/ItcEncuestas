@@ -1,0 +1,63 @@
+﻿@model IEnumerable<EncuestaApertura.Models.Ciudad>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NombreCiudad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HorasDuracion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Jornadas)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FrecuenciaSemanal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SalonDireccion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FechaInicio)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NombreCiudad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.HorasDuracion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Jornadas)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FrecuenciaSemanal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SalonDireccion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FechaInicio)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IdCiudad }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IdCiudad }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IdCiudad })
+        </td>
+    </tr>
+}
+
+</table>

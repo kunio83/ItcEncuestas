@@ -1,0 +1,80 @@
+﻿@model AperturaEncuesta.Models.PlanCiudad
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>PlanCiudad</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IdCiudad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdCiudad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdPlan)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdPlan)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MatriculaValor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MatriculaValor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CuotaCantidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CuotaCantidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CuotaValor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CuotaValor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CuotaValorDescuento)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CuotaValorDescuento)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CertificadoValor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CertificadoValor)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

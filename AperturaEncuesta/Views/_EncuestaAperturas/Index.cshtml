@@ -1,0 +1,39 @@
+﻿@model IEnumerable<AperturaEncuesta.Models.EncuestaApertura>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.EncuestaAsesoramiento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EncuestaSugerencia)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.EncuestaAsesoramiento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EncuestaSugerencia)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IdEncuestaApertura }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IdEncuestaApertura }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IdEncuestaApertura })
+        </td>
+    </tr>
+}
+
+</table>

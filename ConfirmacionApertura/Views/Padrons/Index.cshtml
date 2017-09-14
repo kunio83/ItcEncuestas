@@ -1,0 +1,105 @@
+﻿@model IEnumerable<ConfirmacionApertura.Models.Padron>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.AlumnoNombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AlumnoDNI)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AlumnoMail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AlumnoCel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AlumnoHora)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AlumnoDia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AlumnoEdad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AlumnoDomicilio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AlumnoTel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AlumnoBarrio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Capacitacion.Descripcion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EncuestaApertura.EncuestaSugerencia)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PlanCiudad.MatriculaValor)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.AlumnoNombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AlumnoDNI)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AlumnoMail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AlumnoCel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AlumnoHora)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AlumnoDia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AlumnoEdad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AlumnoDomicilio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AlumnoTel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AlumnoBarrio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Capacitacion.Descripcion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EncuestaApertura.EncuestaSugerencia)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PlanCiudad.MatriculaValor)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IdPadron }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IdPadron }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IdPadron })
+        </td>
+    </tr>
+}
+
+</table>

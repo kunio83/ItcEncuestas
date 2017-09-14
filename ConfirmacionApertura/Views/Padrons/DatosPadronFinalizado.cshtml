@@ -1,0 +1,86 @@
+﻿@model ConfirmacionApertura.Models.AlumnoDatosPadron
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+    <table class="table" border="1" style="table-layout:fixed" >
+        <tr>
+            <td colspan="2" align="center" width="50" height="16">
+                <h3><strong>Datos del Alumno</strong></h3>
+            </td>
+        </tr>
+        <tr>
+            <td><h4>Nombre</h4></td>
+            <td>@Html.DisplayFor(model => model.Padron.AlumnoNombre)</td>
+        </tr>
+        <tr>
+            <td><h4>Edad</h4></td>
+            <td>@Html.DisplayFor(model => model.Padron.AlumnoEdad)</td>
+        </tr>
+        <tr>
+            <td><h4>Documento de Identidad</h4></td>
+            <td>@Html.DisplayFor(model => model.Padron.AlumnoDNI)</td>
+        </tr>
+        <tr>
+            <td><h4>Domicilio</h4></td>
+            <td>@Html.DisplayFor(model => model.Padron.AlumnoDomicilio)</td>
+        </tr>
+        <tr>
+            <td><h4>Barrio</h4></td>
+            <td>@Html.DisplayFor(model => model.Padron.AlumnoBarrio)</td>
+        </tr>
+        <tr>
+            <td><h4>Ciudad</h4></td>
+            <td>@Html.DisplayFor(model => model.Ciudad.NombreCiudad)</td>
+        </tr>
+        <tr>
+            <td><h4>Email</h4></td>
+            <td>@Html.DisplayFor(model => model.Padron.AlumnoMail)</td>
+        </tr>
+        <tr>
+            <td><h4>Teléfono</h4></td>
+            <td>@Html.DisplayFor(model => model.Padron.AlumnoTel)</td>
+        </tr>
+        <tr>
+            <td><h4>Celular</h4></td>
+            <td>@Html.DisplayFor(model => model.Padron.AlumnoCel)</td>
+        
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <h3><strong>Datos de Cursada</strong></h3>
+            </td>
+        </tr>
+        <tr>
+            <td><h4>Capacitación</h4></td>
+            <td>@Html.DisplayFor(model => model.Capacitacion.Descripcion)</td>
+        </tr>
+        <tr>
+            <td><h4>Contenido de la Capacitación</h4></td>
+            <td><p id="contenido">@Html.DisplayFor(model => model.Capacitacion.Contenido)</p></td>
+        </tr>
+        <tr>
+            <td onload="formatearContenido()"><h4>Dia y Horario</h4></td>
+            <td>@Html.DisplayFor(model => model.Padron.AlumnoDia) a las @Html.DisplayFor(model => model.Padron.AlumnoHora)hs</td>
+        </tr>
+        <tr>
+            <td><h4>Duración del curso</h4></td>
+            <td>@Html.DisplayFor(model => model.Ciudad.HorasDuracion)hs en @Html.DisplayFor(model => model.Ciudad.Jornadas) jornadas</td>
+        </tr>
+        <tr>
+            <td><h4>Frecuencia Semanal</h4></td>
+            <td>@Html.DisplayFor(model => model.Ciudad.FrecuenciaSemanal) por semana</td>
+        </tr>
+    </table>
+
+<style>
+    h4{
+        font-style:normal;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight:900;
+        font-size:initial;
+    }
+</style>

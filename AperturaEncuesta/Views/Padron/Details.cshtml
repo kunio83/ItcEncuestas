@@ -1,0 +1,122 @@
+﻿@model AperturaEncuesta.Models.Padron
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Padron</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AlumnoNombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlumnoNombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AlumnoDNI)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlumnoDNI)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AlumnoMail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlumnoMail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AlumnoCel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlumnoCel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AlumnoHora)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlumnoHora)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AlumnoDia)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlumnoDia)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdCapacitacion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdCapacitacion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdPlanCiudad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdPlanCiudad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AlumnoEdad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlumnoEdad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AlumnoDomicilio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlumnoDomicilio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AlumnoTel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlumnoTel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AlumnoBarrio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AlumnoBarrio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdEncuestaApertura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdEncuestaApertura)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdPadron }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

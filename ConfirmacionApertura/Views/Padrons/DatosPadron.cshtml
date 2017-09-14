@@ -1,0 +1,187 @@
+﻿@model ConfirmacionApertura.Models.AlumnoDatosPadron
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@using (Html.BeginForm(@*"Edit", "Cuestionarios", FormMethod.Post*@))
+{
+    @Html.HiddenFor(model => model.Padron.IdPadron)
+    @Html.HiddenFor(model => model.Padron.IdCapacitacion)
+    @Html.HiddenFor(model => model.Padron.IdEncuestaApertura)
+    @Html.HiddenFor(model => model.Padron.IdPlanCiudad)
+    @Html.HiddenFor(model => model.Padron.IdPadron)
+
+
+    <table class="table" border="1" style="table-layout:fixed" >
+        <tr>
+            <td colspan="2" align="center" width="50" height="16">
+                <h3><strong>Datos del Alumno</strong></h3>
+            </td>
+        </tr>
+        <tr>
+            
+            <td><h4>Nombre</h4></td>
+            <td>@Html.TextBoxFor(model => model.Padron.AlumnoNombre) @Html.ValidationMessageFor(model => model.Padron.AlumnoNombre, "", new { @class = "text-danger" })</td>
+        </tr>
+        <tr>
+            <td><h4>Edad</h4></td>
+            <td>@Html.TextBoxFor(model => model.Padron.AlumnoEdad) @Html.ValidationMessageFor(model => model.Padron.AlumnoEdad, "", new { @class = "text-danger" })</td>
+        </tr>
+        <tr>
+            <td><h4>Documento de Identidad</h4></td>
+            <td>@Html.TextBoxFor(model => model.Padron.AlumnoDNI) @Html.ValidationMessageFor(model => model.Padron.AlumnoDNI, "", new { @class = "text-danger" })</td>
+        </tr>
+        <tr>
+            <td><h4>Domicilio</h4></td>
+            <td>@Html.TextBoxFor(model => model.Padron.AlumnoDomicilio) @Html.ValidationMessageFor(model => model.Padron.AlumnoDomicilio, "", new { @class = "text-danger" })</td>
+        </tr>
+        <tr>
+            <td><h4>Barrio</h4></td>
+            <td>@Html.TextBoxFor(model => model.Padron.AlumnoBarrio) @Html.ValidationMessageFor(model => model.Padron.AlumnoBarrio, "", new { @class = "text-danger" })</td>
+        </tr>
+        <tr>
+            <td><h4>Ciudad</h4></td>
+            <td>@Html.DisplayFor(model => model.Ciudad.NombreCiudad)</td>
+        </tr>
+        <tr>
+            <td><h4>Email</h4></td>
+            <td>@Html.TextBoxFor(model => model.Padron.AlumnoMail) @Html.ValidationMessageFor(model => model.Padron.AlumnoMail, "", new { @class = "text-danger" })</td>
+        </tr>
+        <tr>
+            <td><h4>Teléfono</h4></td>
+            <td>@Html.TextBoxFor(model => model.Padron.AlumnoTel)</td>
+        </tr>
+        <tr>
+            <td><h4>Celular</h4></td>
+            <td>@Html.TextBoxFor(model => model.Padron.AlumnoCel) @Html.ValidationMessageFor(model => model.Padron.AlumnoCel, "", new { @class = "text-danger" })</td>
+        
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <h3><strong>Datos de Cursada</strong></h3>
+            </td>
+        </tr>
+        <tr>
+            <td><h4>Capacitación</h4></td>
+            <td>@Html.DisplayFor(model => model.Capacitacion.Descripcion)</td>
+        </tr>
+        <tr>
+            <td><h4>Contenido de la Capacitación</h4></td>
+            <td><p id="contenido">@Html.DisplayFor(model => model.Capacitacion.Contenido)</p></td>
+        </tr>
+        <tr>
+            <!--ViewBag.FechaInicioAlumno-->
+            <td><h4>Fecha de la Primera Clase</h4></td>
+            <td>@ViewBag.FechaInicioAlumno</td>
+        </tr>
+        <tr><!--ViewBag.FechaInicioAlumno-->
+            <td onload="formatearContenido()"><h4>Dia y Horario</h4></td>
+            <td>@Html.DisplayFor(model => model.Padron.AlumnoDia) a las @Html.DisplayFor(model => model.Padron.AlumnoHora)hs</td>
+        </tr>
+        <tr>
+            <td><h4>Duración del curso</h4></td>
+            <td>@Html.DisplayFor(model => model.Ciudad.HorasDuracion)hs en @Html.DisplayFor(model => model.Ciudad.Jornadas) jornadas</td>
+        </tr>
+        <tr>
+            <td><h4>Frecuencia Semanal</h4></td>
+            <td>@Html.DisplayFor(model => model.Ciudad.FrecuenciaSemanal) por semana</td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <h3><strong>Califique su inscripcion</strong></h3>
+            </td>
+        </tr>
+        <tr>
+            @*<td><h4>Asesoramiento</h4></td>*@
+            <td>
+                <h4>Asesoramiento</h4>
+                <div class="col-md-10">
+                    @Html.Label("1")
+                    @Html.RadioButtonFor(model => model.EncuestaApertura.EncuestaAsesoramiento, 1)
+                    @Html.Label("2")
+                    @Html.RadioButtonFor(model => model.EncuestaApertura.EncuestaAsesoramiento, 2)
+                    @Html.Label("3")
+                    @Html.RadioButtonFor(model => model.EncuestaApertura.EncuestaAsesoramiento, 3)
+                    @Html.Label("4")
+                    @Html.RadioButtonFor(model => model.EncuestaApertura.EncuestaAsesoramiento, 4)
+                    @Html.Label("5")
+                    @Html.RadioButtonFor(model => model.EncuestaApertura.EncuestaAsesoramiento, 5)
+                    @Html.Label("6")
+                    @Html.RadioButtonFor(model => model.EncuestaApertura.EncuestaAsesoramiento, 6)
+                    @Html.Label("7")
+                    @Html.RadioButtonFor(model => model.EncuestaApertura.EncuestaAsesoramiento, 7)
+                    @Html.Label("8")
+                    @Html.RadioButtonFor(model => model.EncuestaApertura.EncuestaAsesoramiento, 8)
+                    @Html.Label("9")
+                    @Html.RadioButtonFor(model => model.EncuestaApertura.EncuestaAsesoramiento, 9)
+                    @Html.Label("10")
+                    @Html.RadioButtonFor(model => model.EncuestaApertura.EncuestaAsesoramiento, 10)
+                    @Html.ValidationMessageFor(model => model.EncuestaApertura.EncuestaAsesoramiento, "", new { @class = "text-danger" })
+                </div>
+            </td>
+        </tr>
+        <tr>
+            @*<td><h4>Sugerencias</h4></td>*@
+            <td>
+                <h4>Sugerencias</h4>
+                @Html.TextAreaFor(model => model.EncuestaApertura.EncuestaSugerencia, htmlAttributes: new { style = "width: 100%; height:150px" })
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="center">
+                <h3><strong>Aceptacion de terminos y condiciones</strong></h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p>
+                    <input type="checkbox" id="acepta"/>
+
+                    Acepto ustede por esposo a Raegar Targaryen, zi azepto - Aceptnasdmañskdm ñasldm,ñlasmdasdasdaksdjnaksdhkasjdhiakdnlakjdh
+                sajdñaskldjlñksjadlñkasjñllaskjdkljasndkluhawñoudiahlñduiawhñdoihapñwodihaopwdihawlaskjdkljasndkluhawñou
+                >laskjdkljasndkluhawñoudiahlñduiawhñdoihapñwodihaopwdihaw
+                </p>
+                
+            </td>
+        </tr>
+    </table>
+
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" id="btnContinuar" value="Continuar" class="btn btn-default" disabled />
+        </div>
+    </div>
+}
+
+<script>
+    var checker = document.getElementById('acepta');
+    var sendbtn = document.getElementById('btnContinuar');
+
+    checker.onchange = function () {
+        //sendbtn.disabled = !!this.checked;
+        if (sendbtn.disabled == true)
+            sendbtn.disabled = false;
+        else
+            sendbtn.disabled = true;
+    }
+
+</script>
+
+<style>
+    h4{
+        font-style:normal;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight:900;
+        font-size:initial;
+    }
+</style>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+}

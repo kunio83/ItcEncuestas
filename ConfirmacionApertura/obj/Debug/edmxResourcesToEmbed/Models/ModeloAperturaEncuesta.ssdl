@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EncuestaAperturaModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="EncuestaAperturaModelStoreContainer">
+    <EntitySet Name="Capacitacion" EntityType="EncuestaAperturaModel.Store.Capacitacion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Ciudad" EntityType="EncuestaAperturaModel.Store.Ciudad" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="EncuestaApertura" EntityType="EncuestaAperturaModel.Store.EncuestaApertura" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Padron" EntityType="EncuestaAperturaModel.Store.Padron" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Plan" EntityType="EncuestaAperturaModel.Store.Plan" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PlanCiudad" EntityType="EncuestaAperturaModel.Store.PlanCiudad" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_CapacitacionPadron" Association="EncuestaAperturaModel.Store.FK_CapacitacionPadron">
+      <End Role="Capacitacion" EntitySet="Capacitacion" />
+      <End Role="Padron" EntitySet="Padron" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CiudadPlanCiudad" Association="EncuestaAperturaModel.Store.FK_CiudadPlanCiudad">
+      <End Role="Ciudad" EntitySet="Ciudad" />
+      <End Role="PlanCiudad" EntitySet="PlanCiudad" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PadronEncuestaApertura" Association="EncuestaAperturaModel.Store.FK_PadronEncuestaApertura">
+      <End Role="EncuestaApertura" EntitySet="EncuestaApertura" />
+      <End Role="Padron" EntitySet="Padron" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PadronPlanCiudad" Association="EncuestaAperturaModel.Store.FK_PadronPlanCiudad">
+      <End Role="PlanCiudad" EntitySet="PlanCiudad" />
+      <End Role="Padron" EntitySet="Padron" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PlanPlanCiudad" Association="EncuestaAperturaModel.Store.FK_PlanPlanCiudad">
+      <End Role="Plan" EntitySet="Plan" />
+      <End Role="PlanCiudad" EntitySet="PlanCiudad" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Capacitacion">
+    <Key>
+      <PropertyRef Name="IdCapacitacion" />
+    </Key>
+    <Property Name="IdCapacitacion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Descripcion" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Contenido" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Ciudad">
+    <Key>
+      <PropertyRef Name="IdCiudad" />
+    </Key>
+    <Property Name="IdCiudad" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NombreCiudad" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="HorasDuracion" Type="int" Nullable="false" />
+    <Property Name="Jornadas" Type="int" Nullable="false" />
+    <Property Name="FrecuenciaSemanal" Type="int" Nullable="false" />
+    <Property Name="SalonDireccion" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="FechaInicio" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EncuestaApertura">
+    <Key>
+      <PropertyRef Name="IdEncuestaApertura" />
+    </Key>
+    <Property Name="IdEncuestaApertura" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EncuestaAsesoramiento" Type="int" Nullable="false" />
+    <Property Name="EncuestaSugerencia" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Finalizado" Type="bit" Nullable="false" />
+    <Property Name="FechaHora" Type="datetime" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Padron">
+    <Key>
+      <PropertyRef Name="IdPadron" />
+    </Key>
+    <Property Name="IdPadron" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AlumnoNombre" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="AlumnoDNI" Type="int" Nullable="false" />
+    <Property Name="AlumnoMail" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="AlumnoCel" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="AlumnoHora" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="AlumnoDia" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IdCapacitacion" Type="int" Nullable="false" />
+    <Property Name="IdPlanCiudad" Type="int" Nullable="false" />
+    <Property Name="AlumnoEdad" Type="int" Nullable="false" />
+    <Property Name="AlumnoDomicilio" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="AlumnoTel" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="AlumnoBarrio" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="IdEncuestaApertura" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Plan">
+    <Key>
+      <PropertyRef Name="IdPlan" />
+    </Key>
+    <Property Name="IdPlan" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="PlanDescripcion" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PlanCiudad">
+    <Key>
+      <PropertyRef Name="IdPlanCiudad" />
+    </Key>
+    <Property Name="IdPlanCiudad" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdCiudad" Type="int" Nullable="false" />
+    <Property Name="IdPlan" Type="int" Nullable="false" />
+    <Property Name="MatriculaValor" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CuotaCantidad" Type="int" Nullable="false" />
+    <Property Name="CuotaValor" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CuotaValorDescuento" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="CertificadoValor" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_CapacitacionPadron">
+    <End Role="Capacitacion" Type="EncuestaAperturaModel.Store.Capacitacion" Multiplicity="1" />
+    <End Role="Padron" Type="EncuestaAperturaModel.Store.Padron" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Capacitacion">
+        <PropertyRef Name="IdCapacitacion" />
+      </Principal>
+      <Dependent Role="Padron">
+        <PropertyRef Name="IdCapacitacion" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CiudadPlanCiudad">
+    <End Role="Ciudad" Type="EncuestaAperturaModel.Store.Ciudad" Multiplicity="1" />
+    <End Role="PlanCiudad" Type="EncuestaAperturaModel.Store.PlanCiudad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ciudad">
+        <PropertyRef Name="IdCiudad" />
+      </Principal>
+      <Dependent Role="PlanCiudad">
+        <PropertyRef Name="IdCiudad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PadronEncuestaApertura">
+    <End Role="EncuestaApertura" Type="EncuestaAperturaModel.Store.EncuestaApertura" Multiplicity="1" />
+    <End Role="Padron" Type="EncuestaAperturaModel.Store.Padron" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EncuestaApertura">
+        <PropertyRef Name="IdEncuestaApertura" />
+      </Principal>
+      <Dependent Role="Padron">
+        <PropertyRef Name="IdEncuestaApertura" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PadronPlanCiudad">
+    <End Role="PlanCiudad" Type="EncuestaAperturaModel.Store.PlanCiudad" Multiplicity="1" />
+    <End Role="Padron" Type="EncuestaAperturaModel.Store.Padron" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PlanCiudad">
+        <PropertyRef Name="IdPlanCiudad" />
+      </Principal>
+      <Dependent Role="Padron">
+        <PropertyRef Name="IdPlanCiudad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PlanPlanCiudad">
+    <End Role="Plan" Type="EncuestaAperturaModel.Store.Plan" Multiplicity="1" />
+    <End Role="PlanCiudad" Type="EncuestaAperturaModel.Store.PlanCiudad" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Plan">
+        <PropertyRef Name="IdPlan" />
+      </Principal>
+      <Dependent Role="PlanCiudad">
+        <PropertyRef Name="IdPlan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
